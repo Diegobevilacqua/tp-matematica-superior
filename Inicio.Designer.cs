@@ -29,37 +29,64 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.button = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.comboBoxTipoOperacion = new System.Windows.Forms.ComboBox();
+            this.buttonAceptar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Arial", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkRed;
-            this.label1.Location = new System.Drawing.Point(36, 25);
+            this.label1.Location = new System.Drawing.Point(166, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(304, 25);
+            this.label1.Size = new System.Drawing.Size(352, 38);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Seleccione la operación a realizar";
+            this.label1.Text = "¡Bienvenido a NCOM!";
             // 
-            // button
+            // label2
             // 
-            this.button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button.Location = new System.Drawing.Point(124, 79);
-            this.button.Name = "button";
-            this.button.Size = new System.Drawing.Size(121, 35);
-            this.button.TabIndex = 1;
-            this.button.Text = "button1";
-            this.button.UseVisualStyleBackColor = true;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(24, 119);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(326, 19);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Seleccione el tipo de operación a realizar:";
+            // 
+            // comboBoxTipoOperacion
+            // 
+            this.comboBoxTipoOperacion.FormattingEnabled = true;
+            this.comboBoxTipoOperacion.Items.AddRange(new object[] {
+            "Básica",
+            "Avanzada",
+            "Fasores"});
+            this.comboBoxTipoOperacion.Location = new System.Drawing.Point(372, 117);
+            this.comboBoxTipoOperacion.Name = "comboBoxTipoOperacion";
+            this.comboBoxTipoOperacion.Size = new System.Drawing.Size(280, 21);
+            this.comboBoxTipoOperacion.TabIndex = 2;
+            // 
+            // buttonAceptar
+            // 
+            this.buttonAceptar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAceptar.Location = new System.Drawing.Point(292, 182);
+            this.buttonAceptar.Name = "buttonAceptar";
+            this.buttonAceptar.Size = new System.Drawing.Size(103, 27);
+            this.buttonAceptar.TabIndex = 3;
+            this.buttonAceptar.Text = "Aceptar";
+            this.buttonAceptar.UseVisualStyleBackColor = true;
             // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(396, 450);
-            this.Controls.Add(this.button);
+            this.ClientSize = new System.Drawing.Size(692, 230);
+            this.Controls.Add(this.buttonAceptar);
+            this.Controls.Add(this.comboBoxTipoOperacion);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Inicio";
             this.Text = "Inicio";
@@ -71,7 +98,9 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox comboBoxTipoOperacion;
+        private System.Windows.Forms.Button buttonAceptar;
     }
 }
 

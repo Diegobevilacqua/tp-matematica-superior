@@ -58,5 +58,21 @@ namespace NCOM
 
             return argumento;
         }
+
+        public double GetParteReal()
+        {
+            double modulo = Modulo();
+            double argumento = Argumento();
+
+            return modulo * Math.Cos(argumento);
+        }
+
+        public double GetParteImaginaria()
+        {
+            double modulo = Modulo();
+            double argumento = Argumento();
+
+            return modulo * Math.Sin(argumento);
+        }
     }
 }
