@@ -46,13 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ComplejoPolar.cs" />
     <Compile Include="Inicio.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Inicio.Designer.cs">
       <DependentUpon>Inicio.cs</DependentUpon>
     </Compile>
-    <Compile Include="NumeroComplejo.cs" />
+    <Compile Include="ComplejoBinomica.cs" />
     <Compile Include="Operaciones básicas\OperacionesBasicas.cs">
       <SubType>Form</SubType>
     </Compile>

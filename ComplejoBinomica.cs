@@ -6,10 +6,16 @@ using System.Threading.Tasks;
 
 namespace NCOM
 {
-    class NumeroComplejo
+    class ComplejoBinomica
     {
         private double ParteReal { get; set; }
         private double ParteImaginaria { get; set; }
+
+        public ComplejoBinomica(double _ParteReal, double _ParteImaginaria)
+        {
+            ParteReal = _ParteReal;
+            ParteImaginaria = _ParteImaginaria;
+        }
 
         public int Cuadrante()
         {
@@ -58,21 +64,11 @@ namespace NCOM
 
             return argumento;
         }
-
-        public double GetParteReal()
+        
+        public ComplejoPolar PasarAPolar()
         {
-            double modulo = Modulo();
-            double argumento = Argumento();
-
-            return modulo * Math.Cos(argumento);
-        }
-
-        public double GetParteImaginaria()
-        {
-            double modulo = Modulo();
-            double argumento = Argumento();
-
-            return modulo * Math.Sin(argumento);
+            ComplejoPolar complejoPolar = new ComplejoPolar(Modulo(), Argumento());
+            return complejoPolar;
         }
     }
 }
