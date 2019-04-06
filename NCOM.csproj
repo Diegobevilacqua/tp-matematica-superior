@@ -53,10 +53,28 @@
       <DependentUpon>Inicio.cs</DependentUpon>
     </Compile>
     <Compile Include="NumeroComplejo.cs" />
+    <Compile Include="Operaciones básicas\OperacionesBasicas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operaciones básicas\OperacionesBasicas.Designer.cs">
+      <DependentUpon>OperacionesBasicas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operaciones básicas\Suma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operaciones básicas\Suma.Designer.cs">
+      <DependentUpon>Suma.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operaciones básicas\OperacionesBasicas.resx">
+      <DependentUpon>OperacionesBasicas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operaciones básicas\Suma.resx">
+      <DependentUpon>Suma.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -79,6 +97,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Operaciones avanzadas\" />
+    <Folder Include="Suma de fasores\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

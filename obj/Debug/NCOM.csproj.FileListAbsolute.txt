@@ -8,3 +8,5 @@ C:\Users\Diego\source\repos\NCOM\obj\Debug\NCOM.csproj.GenerateResource.cache
 C:\Users\Diego\source\repos\NCOM\obj\Debug\NCOM.csproj.CoreCompileInputs.cache
 C:\Users\Diego\source\repos\NCOM\obj\Debug\NCOM.exe
 C:\Users\Diego\source\repos\NCOM\obj\Debug\NCOM.pdb
+C:\Users\Diego\source\repos\NCOM\obj\Debug\NCOM.Operaciones_básicas.OperacionesBasicas.resources
+C:\Users\Diego\source\repos\NCOM\obj\Debug\NCOM.Operaciones_básicas.Suma.resources
