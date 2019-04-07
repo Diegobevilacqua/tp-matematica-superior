@@ -56,7 +56,7 @@ namespace NCOM
                 return argumento;
             }
 
-            if (argumento == 2)
+            if (cuadrante == 2)
             {
                 argumento += Math.PI;
                 return argumento;
