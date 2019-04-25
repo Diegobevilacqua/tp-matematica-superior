@@ -69,7 +69,6 @@ namespace NCOM.Operaciones_básicas
                     break;
 
                 case "Resta":
-                    MessageBox.Show("Resta seleccionada");
                     textResultadoBin.Text = Parser.BinAStringBin(resultadoResta);
                     textResultadoPol.Text = Parser.BinAStringPol(resultadoResta);
                     break;
