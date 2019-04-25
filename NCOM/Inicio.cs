@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NCOM.Operaciones_básicas;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,14 @@ namespace NCOM
         public Inicio()
         {
             InitializeComponent();
+        }
+
+        private void PictureBox1_Click(object sender, EventArgs e)
+        {
+            OperarComplejos formSuma = new OperarComplejos();
+            formSuma.Show();
+            formSuma.FormClosing += (obj, args) => { this.Close(); };
+            this.Hide();
         }
     }
 }

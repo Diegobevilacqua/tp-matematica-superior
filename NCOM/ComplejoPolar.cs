@@ -8,8 +8,8 @@ namespace NCOM
 {
     class ComplejoPolar
     {
-        private double Modulo { get; set; }
-        private double Argumento { get; set; }
+        public double Modulo { get; set; }
+        public double Argumento { get; set; }
 
         public ComplejoPolar(double _Modulo, double _Argumento)
         {

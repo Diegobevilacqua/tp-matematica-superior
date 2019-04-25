@@ -8,8 +8,8 @@ namespace NCOM
 {
     class ComplejoBinomica
     {
-        private double ParteReal { get; set; }
-        private double ParteImaginaria { get; set; }
+        public double ParteReal { get; set; }
+        public double ParteImaginaria { get; set; }
 
         public ComplejoBinomica(double _ParteReal, double _ParteImaginaria)
         {
@@ -70,5 +70,12 @@ namespace NCOM
             ComplejoPolar complejoPolar = new ComplejoPolar(Modulo(), Argumento());
             return complejoPolar;
         }
+
+        public ComplejoBinomica PasarABinomica()
+        {
+            return this;
+        }
+
+
     }
 }
