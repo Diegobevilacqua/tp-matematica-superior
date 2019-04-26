@@ -24,7 +24,8 @@ namespace NCOM
                 ComplejoBinomica complejoBin = new ComplejoBinomica(parteReal, parteImaginaria);
                 return complejoBin;
             }
-            else if (regexPolar.IsMatch(textoComplejo))
+            else 
+            if (regexPolar.IsMatch(textoComplejo))
             {
                 Match matchPol = regexPolar.Match(textoComplejo);
 
@@ -35,7 +36,7 @@ namespace NCOM
                 return complejoPolar.PasarABinomica();
             }
 
-            throw new System.ArgumentException("Los numeros no se ingresaron en el formato correcto.");
+            throw new FormatException("Los números no se ingresaron en el formato correcto.");
         }
 
         public static string BinAStringBin(ComplejoBinomica unComplejo)

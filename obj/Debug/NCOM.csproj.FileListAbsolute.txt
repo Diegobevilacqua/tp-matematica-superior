@@ -1,0 +1,11 @@
+C:\Users\Diego\source\repos\NCOM\bin\Debug\NCOM.exe.config
+C:\Users\Diego\source\repos\NCOM\bin\Debug\NCOM.exe
+C:\Users\Diego\source\repos\NCOM\bin\Debug\NCOM.pdb
+C:\Users\Diego\source\repos\NCOM\obj\Debug\NCOM.Inicio.resources
+C:\Users\Diego\source\repos\NCOM\obj\Debug\NCOM.Operaciones_básicas.OperarComplejos.resources
+C:\Users\Diego\source\repos\NCOM\obj\Debug\NCOM.Properties.Resources.resources
+C:\Users\Diego\source\repos\NCOM\obj\Debug\NCOM.csproj.GenerateResource.cache
+C:\Users\Diego\source\repos\NCOM\obj\Debug\NCOM.csproj.CoreCompileInputs.cache
+C:\Users\Diego\source\repos\NCOM\obj\Debug\NCOM.exe
+C:\Users\Diego\source\repos\NCOM\obj\Debug\NCOM.pdb
+C:\Users\Diego\source\repos\NCOM\obj\Debug\NCOM.csprojAssemblyReference.cache
