@@ -32,8 +32,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureRadic = new System.Windows.Forms.PictureBox();
+            this.labelRadCom = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureRadic)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -71,12 +74,40 @@
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
             // 
+            // pictureRadic
+            // 
+            this.pictureRadic.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureRadic.Image = ((System.Drawing.Image)(resources.GetObject("pictureRadic.Image")));
+            this.pictureRadic.Location = new System.Drawing.Point(277, 289);
+            this.pictureRadic.Name = "pictureRadic";
+            this.pictureRadic.Size = new System.Drawing.Size(387, 59);
+            this.pictureRadic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureRadic.TabIndex = 3;
+            this.pictureRadic.TabStop = false;
+            this.pictureRadic.Click += new System.EventHandler(this.PictureRadic_Click);
+            // 
+            // labelRadCom
+            // 
+            this.labelRadCom.AutoSize = true;
+            this.labelRadCom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.labelRadCom.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.labelRadCom.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRadCom.ForeColor = System.Drawing.Color.White;
+            this.labelRadCom.Location = new System.Drawing.Point(296, 298);
+            this.labelRadCom.Name = "labelRadCom";
+            this.labelRadCom.Size = new System.Drawing.Size(348, 41);
+            this.labelRadCom.TabIndex = 4;
+            this.labelRadCom.Text = "Radicacion de complejos";
+            this.labelRadCom.Click += new System.EventHandler(this.LaberRadCom_Click);
+            // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.ClientSize = new System.Drawing.Size(923, 283);
+            this.ClientSize = new System.Drawing.Size(925, 413);
+            this.Controls.Add(this.labelRadCom);
+            this.Controls.Add(this.pictureRadic);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
@@ -85,6 +116,7 @@
             this.Text = "Inicio";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureRadic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -95,6 +127,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureRadic;
+        private System.Windows.Forms.Label labelRadCom;
     }
 }
 

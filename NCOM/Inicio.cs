@@ -25,5 +25,15 @@ namespace NCOM
             formSuma.FormClosing += (obj, args) => { this.Close(); };
             this.Hide();
         }
+
+        private void LaberRadCom_Click(object sender, EventArgs e)
+        {
+            PictureRadic_Click(sender, e);
+        }
+
+        private void PictureRadic_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
