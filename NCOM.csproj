@@ -67,6 +67,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Suma de fasores\EspecialistaEnSumasDeFasores.cs" />
     <Compile Include="Excepciones\FrecuenciasDistintasException.cs" />
+    <Compile Include="TipoDeOnda.cs" />
     <EmbeddedResource Include="Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>
     </EmbeddedResource>

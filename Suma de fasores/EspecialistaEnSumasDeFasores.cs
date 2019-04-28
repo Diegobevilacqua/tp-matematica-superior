@@ -40,7 +40,7 @@ namespace NCOM.Operaciones_básicas
             if (UnaOnda.Tipo != OtraOnda.Tipo)
             {
                 OtraOnda.Tipo = UnaOnda.Tipo;
-                if (UnaOnda.Tipo == TiposDeOnda.Coseno)
+                if (UnaOnda.Tipo == TipoDeOnda.COSENO)
                     OtraOnda.FaseInicial -= Math.PI / 2;
                 else
                     OtraOnda.FaseInicial += Math.PI / 2;
