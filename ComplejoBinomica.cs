@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NCOM
 {
-    class ComplejoBinomica
+    public class ComplejoBinomica
     {
         public double ParteReal { get; set; }
         public double ParteImaginaria { get; set; }

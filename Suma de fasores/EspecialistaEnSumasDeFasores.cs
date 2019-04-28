@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NCOM.Operaciones_básicas
 {
-    class EspecialistaEnSumasDeFasores
+    public class EspecialistaEnSumasDeFasores
     {
         public Onda UnaOnda { get; set; }
         public Onda OtraOnda { get; set; }
@@ -19,16 +19,35 @@ namespace NCOM.Operaciones_básicas
 
         public ComplejoBinomica SumarFasores()
         {
+
+            this.VerificarYConvertirTiposOnda();
+
             if (UnaOnda.Frecuencia != OtraOnda.Frecuencia)
                 throw new FrecuenciasDistintasException();
+
             return OperacionesBasicas.Sumar(UnaOnda.Fasor(), OtraOnda.Fasor());
         }
 
         public Onda SumarOndas()
         {
-            ComplejoBinomica fasoresSumados = SumarFasores();
+            ComplejoPolar fasoresSumados = SumarFasores().PasarAPolar();
+
+            return new Onda(fasoresSumados.Modulo, UnaOnda.Frecuencia, fasoresSumados.Argumento, UnaOnda.Tipo);
         }
 
-
+        private void VerificarYConvertirTiposOnda()
+        {
+            if (UnaOnda.Tipo != OtraOnda.Tipo)
+            {
+                OtraOnda.Tipo = UnaOnda.Tipo;
+                if (UnaOnda.Tipo == TiposDeOnda.Coseno)
+                    OtraOnda.FaseInicial -= Math.PI / 2;
+                else
+                    OtraOnda.FaseInicial += Math.PI / 2;
+            }
+        }
     }
+
+
+
 }

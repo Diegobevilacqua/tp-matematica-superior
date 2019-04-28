@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NCOM
 {
-    class ComplejoPolar
+    public class ComplejoPolar
     {
         public double Modulo { get; set; }
         public double Argumento { get; set; }
