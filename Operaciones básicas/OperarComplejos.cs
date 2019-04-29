@@ -119,5 +119,10 @@ namespace NCOM.Operaciones_básicas
         {
             LabelContinuar_Click(sender, e);
         }
+
+        private void LabelResPol_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
