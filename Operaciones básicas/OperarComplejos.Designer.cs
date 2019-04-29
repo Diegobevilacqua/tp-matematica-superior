@@ -101,7 +101,7 @@
             this.pictureContinuar.Location = new System.Drawing.Point(208, 274);
             this.pictureContinuar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureContinuar.Name = "pictureContinuar";
-            this.pictureContinuar.Size = new System.Drawing.Size(130, 25);
+            this.pictureContinuar.Size = new System.Drawing.Size(130, 45);
             this.pictureContinuar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureContinuar.TabIndex = 9;
             this.pictureContinuar.TabStop = false;
@@ -231,7 +231,7 @@
             this.labelContinuar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelContinuar.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelContinuar.ForeColor = System.Drawing.Color.White;
-            this.labelContinuar.Location = new System.Drawing.Point(233, 274);
+            this.labelContinuar.Location = new System.Drawing.Point(233, 284);
             this.labelContinuar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelContinuar.Name = "labelContinuar";
             this.labelContinuar.Size = new System.Drawing.Size(81, 25);
