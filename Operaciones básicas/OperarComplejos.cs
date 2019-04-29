@@ -88,7 +88,7 @@ namespace NCOM.Operaciones_básicas
                         break;
                 }
             }
-            catch (FormatException fe)
+            catch 
             {
                 MessageBox.Show("Introduzca los números con el siguiente formato: \n" +
                     "En forma binómica: (a,b) - 'a' parte Real, 'b' parte imaginaria \n" +
