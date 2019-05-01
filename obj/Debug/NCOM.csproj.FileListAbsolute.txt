@@ -9,3 +9,17 @@ C:\Users\Diego\source\repos\NCOM\obj\Debug\NCOM.csproj.CoreCompileInputs.cache
 C:\Users\Diego\source\repos\NCOM\obj\Debug\NCOM.exe
 C:\Users\Diego\source\repos\NCOM\obj\Debug\NCOM.pdb
 C:\Users\Diego\source\repos\NCOM\obj\Debug\NCOM.csprojAssemblyReference.cache
+C:\Users\Franco\source\repos\tp-matematica-superior\bin\Debug\NCOM.exe.config
+C:\Users\Franco\source\repos\tp-matematica-superior\bin\Debug\NCOM.exe
+C:\Users\Franco\source\repos\tp-matematica-superior\bin\Debug\NCOM.pdb
+C:\Users\Franco\source\repos\tp-matematica-superior\bin\Debug\nunit.framework.dll
+C:\Users\Franco\source\repos\tp-matematica-superior\bin\Debug\nunit.framework.xml
+C:\Users\Franco\source\repos\tp-matematica-superior\obj\Debug\NCOM.csprojAssemblyReference.cache
+C:\Users\Franco\source\repos\tp-matematica-superior\obj\Debug\NCOM.Inicio.resources
+C:\Users\Franco\source\repos\tp-matematica-superior\obj\Debug\NCOM.Operaciones_básicas.OperarComplejos.resources
+C:\Users\Franco\source\repos\tp-matematica-superior\obj\Debug\NCOM.Properties.Resources.resources
+C:\Users\Franco\source\repos\tp-matematica-superior\obj\Debug\NCOM.csproj.GenerateResource.cache
+C:\Users\Franco\source\repos\tp-matematica-superior\obj\Debug\NCOM.csproj.CoreCompileInputs.cache
+C:\Users\Franco\source\repos\tp-matematica-superior\obj\Debug\NCOM.csproj.CopyComplete
+C:\Users\Franco\source\repos\tp-matematica-superior\obj\Debug\NCOM.exe
+C:\Users\Franco\source\repos\tp-matematica-superior\obj\Debug\NCOM.pdb

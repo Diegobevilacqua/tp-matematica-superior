@@ -43,14 +43,14 @@ namespace NCOM
         {
             double suParteReal = unComplejo.ParteReal;
             double suParteImaginaria = unComplejo.ParteImaginaria;
-            return "(" + String.Format("{0:0.000}", suParteReal) + "," + String.Format("{0:0.000}", suParteImaginaria) + ")";
+            return "(" + String.Format("{0:0.000}", suParteReal) + " , " + String.Format("{0:0.000}", suParteImaginaria) + ")";
         }
         public static string BinAStringPol(ComplejoBinomica unComplejo)
         {
             ComplejoPolar enPolar = unComplejo.PasarAPolar();
             double suModulo = enPolar.Modulo;
             double suArgumento = enPolar.Argumento;
-            return "[" + String.Format("{0:0.000}", suModulo) + ";" + String.Format("{0:0.000}", suArgumento) + "]";
+            return "[" + String.Format("{0:0.000}", suModulo) + " ; " + String.Format("{0:0.000}", suArgumento) + "]";
         }
 
     }
