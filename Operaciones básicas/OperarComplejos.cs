@@ -61,7 +61,9 @@ namespace NCOM.Operaciones_básicas
                 ComplejoBinomica segundoComplejo = Parser.parsear(textoSegundoComplejo);
 
                 ComplejoBinomica resultadoSuma = OperacionesBasicas.Sumar(primerComplejo, segundoComplejo);
-                ComplejoBinomica resultadoResta = OperacionesBasicas.Sumar(primerComplejo, segundoComplejo);
+                ComplejoBinomica resultadoResta = OperacionesBasicas.Restar(primerComplejo, segundoComplejo);
+                ComplejoBinomica resultadoMultiplicacion = OperacionesBasicas.Multiplicar(primerComplejo, segundoComplejo);
+                ComplejoBinomica resultadoDivision = OperacionesBasicas.Dividir(primerComplejo, segundoComplejo);
 
                 switch (comboBoxOperacion.SelectedItem.ToString())
                 {
@@ -76,11 +78,13 @@ namespace NCOM.Operaciones_básicas
                         break;
 
                     case "Multiplicación":
-                        MessageBox.Show("Multiplicacion seleccionada");
+                        textResultadoBin.Text = Parser.BinAStringBin(resultadoMultiplicacion);
+                        textResultadoPol.Text = Parser.BinAStringPol(resultadoMultiplicacion);
                         break;
 
-                    case "Division":
-                        MessageBox.Show("Division seleccionada");
+                    case "División":
+                        textResultadoBin.Text = Parser.BinAStringBin(resultadoDivision);
+                        textResultadoPol.Text = Parser.BinAStringPol(resultadoDivision);
                         break;
 
                     default:

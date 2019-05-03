@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NCOM.Operaciones_básicas
 {
-    class OperacionesBasicas
+    public class OperacionesBasicas
     {
         
         public static ComplejoBinomica Sumar(ComplejoBinomica unComplejo, ComplejoBinomica otroComlpejo)
@@ -26,6 +26,21 @@ namespace NCOM.Operaciones_básicas
 
             ComplejoBinomica nuevoComplejo = new ComplejoBinomica(nuevoReal, nuevoImaginario);
             return nuevoComplejo;
+        }
+
+        public static ComplejoBinomica Multiplicar(ComplejoBinomica unComplejo, ComplejoBinomica otroComplejo)
+        {
+            double nuevoReal = (unComplejo.ParteReal * otroComplejo.ParteReal) - (unComplejo.ParteImaginaria * otroComplejo.ParteImaginaria);
+            double nuevoImaginaria = (unComplejo.ParteReal * otroComplejo.ParteImaginaria) + (unComplejo.ParteImaginaria * otroComplejo.ParteReal);
+
+            return new ComplejoBinomica(nuevoReal, nuevoImaginaria);
+        }
+
+        public static ComplejoBinomica Dividir(ComplejoBinomica unComplejo, ComplejoBinomica otroComplejo)
+        {
+            double nuevoReal = ((unComplejo.ParteReal * otroComplejo.ParteReal) + (unComplejo.ParteImaginaria + otroComplejo.ParteImaginaria)) / (Math.Pow(otroComplejo.ParteReal, 2) + Math.Pow(otroComplejo.ParteImaginaria, 2));
+            double nuevoImaginaria = ((unComplejo.ParteImaginaria * otroComplejo.ParteReal) - (unComplejo.ParteReal * otroComplejo.ParteImaginaria)) / (Math.Pow(otroComplejo.ParteReal, 2) + Math.Pow(otroComplejo.ParteImaginaria, 2));
+            return new ComplejoBinomica(nuevoReal, nuevoImaginaria);
         }
 
     }
