@@ -6,26 +6,26 @@
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 Aplicacion_Desktop/PalcoNet/PalcoNet.v11.suo
 # User-specific files
-NCOM/*.suo
-NCOM/*.v11.suo
-NCOM/*.user
-NCOM/*.userosscache
-NCOM/*.sln.docstates
+*.suo
+*.v11.suo
+*.user
+*.userosscache
+*.sln.docstates
 
 # User-specific files (MonoDevelop/Xamarin Studio)
-NCOM/*.userprefs
+*.userprefs
 
 # Build results
-NCOM/[Dd]ebug/
-NCOM/[Dd]ebugPublic/
-NCOM/[Rr]elease/
-NCOM/[Rr]eleases/
-NCOM/x64/
-NCOM/x86/
-NCOM/bld/
-NCOM/[Bb]in/
-NCOM/[Oo]bj/
-NCOM/[Ll]og/
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
 
 # Visual Studio 2015 cache/options directory
 .vs/
