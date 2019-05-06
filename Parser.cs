@@ -11,8 +11,8 @@ namespace NCOM
     {
         public static ComplejoBinomica parsear(string textoComplejo)
         {
-            Regex regexBinomica = new Regex(@"\([\+-]?(\d+)\.?\d*,[\+-]?(\d)+\.?\d*\)");
-            Regex regexPolar = new Regex(@"\[(\d)+\.?\d*;[\+-]?(\d)+\.?\d*\]");
+            Regex regexBinomica = new Regex(@"\s*\(\s*([\+-]?\d+(?:,\d+)?)\s*,\s*([\+-]?\d+(?:,\d+)?)\s*\)\s*");
+            Regex regexPolar = new Regex(@"\s*\[\s*([\+-]?\d+(?:,\d+)?)\s*;\s*([\+-]?\d+(?:,\d+)?)\s*\]\s*");
 
             if (regexBinomica.IsMatch(textoComplejo))
             {
