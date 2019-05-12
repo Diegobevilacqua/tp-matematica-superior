@@ -8,7 +8,7 @@ namespace NCOM.Operaciones_avanzadas
 {
     public static class Radicacion
     {
-        public static ComplejoPolar[] RaizNatural(ComplejoPolar complejoPolar, double orden)
+        public static ComplejoPolar[] Calcular(ComplejoPolar complejoPolar, double orden)
         {
             ComplejoPolar[] raices = new ComplejoPolar[(int)orden];
 

@@ -12,11 +12,14 @@ namespace NCOM.Operaciones_avanzadas
 {
     public partial class OperacionesAvanzadas : Form
     {
-        private Inicio inicio;
+        private Inicio Inicio;
+        private ComplejoPolar ComplejoPolar;
+        private double ExpOrden;
+
         public OperacionesAvanzadas(Inicio _inicio)
         {
             InitializeComponent();
-            inicio = _inicio;
+            Inicio = _inicio;
         }
 
         private void OperacionesAvanzadas_Load(object sender, EventArgs e)
@@ -26,8 +29,31 @@ namespace NCOM.Operaciones_avanzadas
 
         private void ButtonAtras_Click(object sender, EventArgs e)
         {
-            inicio.Show();
+            Inicio.Show();
             Close();
+        }
+
+        private void ButtonCalcular_Click(object sender, EventArgs e)
+        {
+            ComplejoBinomica complejoBinomica;
+            ComplejoPolar complejoPolar;
+
+            if (Parser.EstaEnBinomica(textBoxComplejo.Text) || Parser.EstaEnPolar(textBoxComplejo.Text))
+            {
+                complejoBinomica = Parser.Parsear(textBoxComplejo.Text);
+                complejoPolar = complejoBinomica.PasarAPolar();
+            }
+            else
+            {
+                throw new Exception("El formato del texto ingresado no es válido.");
+            }
+
+            if (comboBoxOperacion.Text == "Potenciación")
+            {
+                ComplejoPolar resultado = Potenciacion.Calcular(complejoPolar, Convert.ToDouble(textBoxExpOrden.Text));
+                textBoxResBin.Text = Parser.BinAStringBin(resultado.PasarABinomica());
+            }
+            
         }
     }
 }

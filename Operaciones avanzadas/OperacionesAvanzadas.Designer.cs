@@ -187,6 +187,7 @@
             this.buttonCalcular.TabIndex = 40;
             this.buttonCalcular.Text = "Calcular";
             this.buttonCalcular.UseVisualStyleBackColor = true;
+            this.buttonCalcular.Click += new System.EventHandler(this.ButtonCalcular_Click);
             // 
             // OperacionesAvanzadas
             // 

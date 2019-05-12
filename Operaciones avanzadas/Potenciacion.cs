@@ -8,7 +8,7 @@ namespace NCOM.Operaciones_avanzadas
 {
     public static class Potenciacion
     {
-        public static ComplejoPolar PotenciaNatural(ComplejoPolar complejoPolar, double exponente)
+        public static ComplejoPolar Calcular(ComplejoPolar complejoPolar, double exponente)
         {
             return new ComplejoPolar(Math.Pow(complejoPolar.Argumento, exponente), complejoPolar.Argumento * exponente);
         }

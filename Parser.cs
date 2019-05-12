@@ -7,14 +7,25 @@ using System.Threading.Tasks;
 
 namespace NCOM
 {
-    class Parser
+    public class Parser
     {
+        public static bool EstaEnBinomica(string complejo)
+        {
+            Regex regexBinomica = new Regex(@"\s*\(\s*([\+-]?\d+(?:,\d+)?)\s*,\s*([\+-]?\d+(?:,\d+)?)\s*\)\s*");
+            return regexBinomica.IsMatch(complejo);
+        }
+        public static bool EstaEnPolar(string complejo)
+        {
+            Regex regexPolar = new Regex(@"\s*\[\s*([\+-]?\d+(?:,\d+)?)\s*;\s*([\+-]?\d+(?:,\d+)?)\s*\]\s*");
+
+            return regexPolar.IsMatch(complejo);
+        }
         public static ComplejoBinomica Parsear(string textoComplejo)
         {
             Regex regexBinomica = new Regex(@"\s*\(\s*([\+-]?\d+(?:,\d+)?)\s*,\s*([\+-]?\d+(?:,\d+)?)\s*\)\s*");
             Regex regexPolar = new Regex(@"\s*\[\s*([\+-]?\d+(?:,\d+)?)\s*;\s*([\+-]?\d+(?:,\d+)?)\s*\]\s*");
 
-            if (regexBinomica.IsMatch(textoComplejo))
+            if (EstaEnPolar(textoComplejo))
             {
                 Match matchBin = regexBinomica.Match(textoComplejo);
 
@@ -25,7 +36,7 @@ namespace NCOM
                 return complejoBin;
             }
             else 
-            if (regexPolar.IsMatch(textoComplejo))
+            if (EstaEnBinomica(textoComplejo))
             {
                 Match matchPol = regexPolar.Match(textoComplejo);
 
@@ -52,6 +63,5 @@ namespace NCOM
             double suArgumento = enPolar.Argumento;
             return "[" + String.Format("{0:0.000}", suModulo) + " ; " + String.Format("{0:0.000}", suArgumento) + "]";
         }
-
     }
 }
