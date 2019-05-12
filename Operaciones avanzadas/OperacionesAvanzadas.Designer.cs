@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OperacionesAvanzadas));
             this.label3 = new System.Windows.Forms.Label();
             this.textBoxComplejo = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -36,17 +35,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxExpOrden = new System.Windows.Forms.TextBox();
-            this.labelContinuar = new System.Windows.Forms.Label();
-            this.pictureContinuar = new System.Windows.Forms.PictureBox();
             this.labelResultado = new System.Windows.Forms.Label();
             this.labelResPol = new System.Windows.Forms.Label();
             this.labelResBin = new System.Windows.Forms.Label();
-            this.labelAtras = new System.Windows.Forms.Label();
-            this.pictureAtras = new System.Windows.Forms.PictureBox();
             this.textBoxResBin = new System.Windows.Forms.TextBox();
             this.textBoxResPol = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureContinuar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureAtras)).BeginInit();
+            this.buttonAtras = new System.Windows.Forms.Button();
+            this.buttonCalcular = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label3
@@ -122,38 +117,12 @@
             this.textBoxExpOrden.Size = new System.Drawing.Size(198, 20);
             this.textBoxExpOrden.TabIndex = 27;
             // 
-            // labelContinuar
-            // 
-            this.labelContinuar.AutoSize = true;
-            this.labelContinuar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(74)))), ((int)(((byte)(66)))));
-            this.labelContinuar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.labelContinuar.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelContinuar.ForeColor = System.Drawing.Color.White;
-            this.labelContinuar.Location = new System.Drawing.Point(300, 266);
-            this.labelContinuar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelContinuar.Name = "labelContinuar";
-            this.labelContinuar.Size = new System.Drawing.Size(81, 25);
-            this.labelContinuar.TabIndex = 29;
-            this.labelContinuar.Text = "Calcular";
-            // 
-            // pictureContinuar
-            // 
-            this.pictureContinuar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureContinuar.Image = ((System.Drawing.Image)(resources.GetObject("pictureContinuar.Image")));
-            this.pictureContinuar.Location = new System.Drawing.Point(275, 256);
-            this.pictureContinuar.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureContinuar.Name = "pictureContinuar";
-            this.pictureContinuar.Size = new System.Drawing.Size(130, 45);
-            this.pictureContinuar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureContinuar.TabIndex = 28;
-            this.pictureContinuar.TabStop = false;
-            // 
             // labelResultado
             // 
             this.labelResultado.AutoSize = true;
             this.labelResultado.Font = new System.Drawing.Font("Segoe UI", 20F);
             this.labelResultado.ForeColor = System.Drawing.Color.White;
-            this.labelResultado.Location = new System.Drawing.Point(271, 337);
+            this.labelResultado.Location = new System.Drawing.Point(269, 336);
             this.labelResultado.Name = "labelResultado";
             this.labelResultado.Size = new System.Drawing.Size(134, 37);
             this.labelResultado.TabIndex = 30;
@@ -172,7 +141,6 @@
             this.labelResPol.TabIndex = 36;
             this.labelResPol.Text = "Forma polar:";
             this.labelResPol.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelResPol.Visible = false;
             // 
             // labelResBin
             // 
@@ -185,33 +153,6 @@
             this.labelResBin.TabIndex = 35;
             this.labelResBin.Text = "Forma binómica:";
             this.labelResBin.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelResBin.Visible = false;
-            // 
-            // labelAtras
-            // 
-            this.labelAtras.AutoSize = true;
-            this.labelAtras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(74)))), ((int)(((byte)(66)))));
-            this.labelAtras.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.labelAtras.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAtras.ForeColor = System.Drawing.Color.White;
-            this.labelAtras.Location = new System.Drawing.Point(40, 471);
-            this.labelAtras.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelAtras.Name = "labelAtras";
-            this.labelAtras.Size = new System.Drawing.Size(57, 25);
-            this.labelAtras.TabIndex = 32;
-            this.labelAtras.Text = "Atrás";
-            // 
-            // pictureAtras
-            // 
-            this.pictureAtras.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureAtras.Image = ((System.Drawing.Image)(resources.GetObject("pictureAtras.Image")));
-            this.pictureAtras.Location = new System.Drawing.Point(13, 468);
-            this.pictureAtras.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureAtras.Name = "pictureAtras";
-            this.pictureAtras.Size = new System.Drawing.Size(111, 33);
-            this.pictureAtras.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureAtras.TabIndex = 31;
-            this.pictureAtras.TabStop = false;
             // 
             // textBoxResBin
             // 
@@ -227,21 +168,39 @@
             this.textBoxResPol.Size = new System.Drawing.Size(198, 20);
             this.textBoxResPol.TabIndex = 38;
             // 
+            // buttonAtras
+            // 
+            this.buttonAtras.Location = new System.Drawing.Point(12, 482);
+            this.buttonAtras.Name = "buttonAtras";
+            this.buttonAtras.Size = new System.Drawing.Size(75, 23);
+            this.buttonAtras.TabIndex = 39;
+            this.buttonAtras.Text = " Atrás";
+            this.buttonAtras.UseVisualStyleBackColor = true;
+            this.buttonAtras.Click += new System.EventHandler(this.ButtonAtras_Click);
+            // 
+            // buttonCalcular
+            // 
+            this.buttonCalcular.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCalcular.Location = new System.Drawing.Point(276, 264);
+            this.buttonCalcular.Name = "buttonCalcular";
+            this.buttonCalcular.Size = new System.Drawing.Size(127, 43);
+            this.buttonCalcular.TabIndex = 40;
+            this.buttonCalcular.Text = "Calcular";
+            this.buttonCalcular.UseVisualStyleBackColor = true;
+            // 
             // OperacionesAvanzadas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
             this.ClientSize = new System.Drawing.Size(692, 517);
+            this.Controls.Add(this.buttonCalcular);
+            this.Controls.Add(this.buttonAtras);
             this.Controls.Add(this.textBoxResPol);
             this.Controls.Add(this.textBoxResBin);
             this.Controls.Add(this.labelResPol);
             this.Controls.Add(this.labelResBin);
-            this.Controls.Add(this.labelAtras);
-            this.Controls.Add(this.pictureAtras);
             this.Controls.Add(this.labelResultado);
-            this.Controls.Add(this.labelContinuar);
-            this.Controls.Add(this.pictureContinuar);
             this.Controls.Add(this.textBoxExpOrden);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -251,8 +210,7 @@
             this.Controls.Add(this.label3);
             this.Name = "OperacionesAvanzadas";
             this.Text = "Operaciones avanzadas";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureContinuar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureAtras)).EndInit();
+            this.Load += new System.EventHandler(this.OperacionesAvanzadas_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -267,14 +225,12 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBoxExpOrden;
-        private System.Windows.Forms.Label labelContinuar;
-        private System.Windows.Forms.PictureBox pictureContinuar;
         private System.Windows.Forms.Label labelResultado;
         private System.Windows.Forms.Label labelResPol;
         private System.Windows.Forms.Label labelResBin;
-        private System.Windows.Forms.Label labelAtras;
-        private System.Windows.Forms.PictureBox pictureAtras;
         private System.Windows.Forms.TextBox textBoxResBin;
         private System.Windows.Forms.TextBox textBoxResPol;
+        private System.Windows.Forms.Button buttonAtras;
+        private System.Windows.Forms.Button buttonCalcular;
     }
 }

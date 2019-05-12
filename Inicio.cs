@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using NCOM.Operaciones_avanzadas;
 
 namespace NCOM
 {
@@ -34,11 +35,15 @@ namespace NCOM
 
         private void PicturePot_Click(object sender, EventArgs e)
         {
-
+            OperacionesAvanzadas operacionesAvanzadas = new OperacionesAvanzadas(this);
+            operacionesAvanzadas.Show();
+            Hide();
         }
         private void PictureRadic_Click(object sender, EventArgs e)
         {
-
+            OperacionesAvanzadas operacionesAvanzadas = new OperacionesAvanzadas(this);
+            operacionesAvanzadas.Show();
+            Hide();
         }
 
 

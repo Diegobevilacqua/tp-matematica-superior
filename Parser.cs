@@ -9,7 +9,7 @@ namespace NCOM
 {
     class Parser
     {
-        public static ComplejoBinomica parsear(string textoComplejo)
+        public static ComplejoBinomica Parsear(string textoComplejo)
         {
             Regex regexBinomica = new Regex(@"\s*\(\s*([\+-]?\d+(?:,\d+)?)\s*,\s*([\+-]?\d+(?:,\d+)?)\s*\)\s*");
             Regex regexPolar = new Regex(@"\s*\[\s*([\+-]?\d+(?:,\d+)?)\s*;\s*([\+-]?\d+(?:,\d+)?)\s*\]\s*");

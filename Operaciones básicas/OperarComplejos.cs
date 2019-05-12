@@ -57,8 +57,8 @@ namespace NCOM.Operaciones_básicas
                 string textoPrimerComplejo = textComplejo1.Text;
                 string textoSegundoComplejo = textComplejo2.Text;
 
-                ComplejoBinomica primerComplejo = Parser.parsear(textoPrimerComplejo);
-                ComplejoBinomica segundoComplejo = Parser.parsear(textoSegundoComplejo);
+                ComplejoBinomica primerComplejo = Parser.Parsear(textoPrimerComplejo);
+                ComplejoBinomica segundoComplejo = Parser.Parsear(textoSegundoComplejo);
 
                 ComplejoBinomica resultadoSuma = OperacionesBasicas.Sumar(primerComplejo, segundoComplejo);
                 ComplejoBinomica resultadoResta = OperacionesBasicas.Restar(primerComplejo, segundoComplejo);
