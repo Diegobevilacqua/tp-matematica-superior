@@ -52,6 +52,7 @@ namespace NCOM.Operaciones_avanzadas
             {
                 ComplejoPolar resultado = Potenciacion.Calcular(complejoPolar, Convert.ToDouble(textBoxExpOrden.Text));
                 textBoxResBin.Text = Parser.BinAStringBin(resultado.PasarABinomica());
+                textBoxResPol.Text = Parser.BinAStringPol(resultado.PasarABinomica());
             }
             
         }
