@@ -42,7 +42,8 @@
             this.textBoxResPol = new System.Windows.Forms.TextBox();
             this.buttonAtras = new System.Windows.Forms.Button();
             this.buttonCalcular = new System.Windows.Forms.Button();
-            this.labelRaicesPrimitivas = new System.Windows.Forms.Label();
+            this.buttonAnterior = new System.Windows.Forms.Button();
+            this.buttonSiguiente = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label3
@@ -125,11 +126,11 @@
             // labelResultado
             // 
             this.labelResultado.AutoSize = true;
-            this.labelResultado.Font = new System.Drawing.Font("Segoe UI", 20F);
+            this.labelResultado.Font = new System.Drawing.Font("Segoe UI Light", 25F);
             this.labelResultado.ForeColor = System.Drawing.Color.White;
-            this.labelResultado.Location = new System.Drawing.Point(269, 329);
+            this.labelResultado.Location = new System.Drawing.Point(258, 356);
             this.labelResultado.Name = "labelResultado";
-            this.labelResultado.Size = new System.Drawing.Size(134, 37);
+            this.labelResultado.Size = new System.Drawing.Size(159, 46);
             this.labelResultado.TabIndex = 30;
             this.labelResultado.Text = "Resultado";
             this.labelResultado.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -139,7 +140,7 @@
             this.labelResPol.AutoSize = true;
             this.labelResPol.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelResPol.ForeColor = System.Drawing.Color.White;
-            this.labelResPol.Location = new System.Drawing.Point(363, 432);
+            this.labelResPol.Location = new System.Drawing.Point(354, 427);
             this.labelResPol.Name = "labelResPol";
             this.labelResPol.Size = new System.Drawing.Size(98, 21);
             this.labelResPol.TabIndex = 36;
@@ -151,7 +152,7 @@
             this.labelResBin.AutoSize = true;
             this.labelResBin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelResBin.ForeColor = System.Drawing.Color.White;
-            this.labelResBin.Location = new System.Drawing.Point(10, 431);
+            this.labelResBin.Location = new System.Drawing.Point(8, 429);
             this.labelResBin.Name = "labelResBin";
             this.labelResBin.Size = new System.Drawing.Size(126, 21);
             this.labelResBin.TabIndex = 35;
@@ -161,7 +162,7 @@
             // textBoxResBin
             // 
             this.textBoxResBin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxResBin.Location = new System.Drawing.Point(142, 429);
+            this.textBoxResBin.Location = new System.Drawing.Point(149, 427);
             this.textBoxResBin.Name = "textBoxResBin";
             this.textBoxResBin.Size = new System.Drawing.Size(173, 26);
             this.textBoxResBin.TabIndex = 37;
@@ -169,14 +170,14 @@
             // textBoxResPol
             // 
             this.textBoxResPol.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxResPol.Location = new System.Drawing.Point(467, 430);
+            this.textBoxResPol.Location = new System.Drawing.Point(468, 427);
             this.textBoxResPol.Name = "textBoxResPol";
             this.textBoxResPol.Size = new System.Drawing.Size(198, 26);
             this.textBoxResPol.TabIndex = 38;
             // 
             // buttonAtras
             // 
-            this.buttonAtras.Location = new System.Drawing.Point(12, 478);
+            this.buttonAtras.Location = new System.Drawing.Point(12, 567);
             this.buttonAtras.Name = "buttonAtras";
             this.buttonAtras.Size = new System.Drawing.Size(75, 23);
             this.buttonAtras.TabIndex = 39;
@@ -195,26 +196,36 @@
             this.buttonCalcular.UseVisualStyleBackColor = true;
             this.buttonCalcular.Click += new System.EventHandler(this.ButtonCalcular_Click);
             // 
-            // labelRaicesPrimitivas
+            // buttonAnterior
             // 
-            this.labelRaicesPrimitivas.AutoSize = true;
-            this.labelRaicesPrimitivas.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelRaicesPrimitivas.ForeColor = System.Drawing.Color.White;
-            this.labelRaicesPrimitivas.Location = new System.Drawing.Point(12, 386);
-            this.labelRaicesPrimitivas.Name = "labelRaicesPrimitivas";
-            this.labelRaicesPrimitivas.Size = new System.Drawing.Size(130, 21);
-            this.labelRaicesPrimitivas.TabIndex = 41;
-            this.labelRaicesPrimitivas.Text = "Raíces primitivas:";
-            this.labelRaicesPrimitivas.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelRaicesPrimitivas.Visible = false;
+            this.buttonAnterior.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAnterior.Location = new System.Drawing.Point(149, 494);
+            this.buttonAnterior.Name = "buttonAnterior";
+            this.buttonAnterior.Size = new System.Drawing.Size(153, 33);
+            this.buttonAnterior.TabIndex = 43;
+            this.buttonAnterior.Text = "Anterior";
+            this.buttonAnterior.UseVisualStyleBackColor = true;
+            this.buttonAnterior.Visible = false;
+            // 
+            // buttonSiguiente
+            // 
+            this.buttonSiguiente.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSiguiente.Location = new System.Drawing.Point(349, 494);
+            this.buttonSiguiente.Name = "buttonSiguiente";
+            this.buttonSiguiente.Size = new System.Drawing.Size(153, 33);
+            this.buttonSiguiente.TabIndex = 44;
+            this.buttonSiguiente.Text = "Siguiente";
+            this.buttonSiguiente.UseVisualStyleBackColor = true;
+            this.buttonSiguiente.Visible = false;
             // 
             // OperacionesAvanzadas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.ClientSize = new System.Drawing.Size(678, 513);
-            this.Controls.Add(this.labelRaicesPrimitivas);
+            this.ClientSize = new System.Drawing.Size(680, 603);
+            this.Controls.Add(this.buttonSiguiente);
+            this.Controls.Add(this.buttonAnterior);
             this.Controls.Add(this.buttonCalcular);
             this.Controls.Add(this.buttonAtras);
             this.Controls.Add(this.textBoxResPol);
@@ -253,6 +264,7 @@
         private System.Windows.Forms.TextBox textBoxResPol;
         private System.Windows.Forms.Button buttonAtras;
         private System.Windows.Forms.Button buttonCalcular;
-        private System.Windows.Forms.Label labelRaicesPrimitivas;
+        private System.Windows.Forms.Button buttonAnterior;
+        private System.Windows.Forms.Button buttonSiguiente;
     }
 }

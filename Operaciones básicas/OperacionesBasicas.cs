@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 namespace NCOM.Operaciones_básicas
 {
     public class OperacionesBasicas
-    {
-        
+    {    
         public static ComplejoBinomica Sumar(ComplejoBinomica unComplejo, ComplejoBinomica otroComlpejo)
         {
 

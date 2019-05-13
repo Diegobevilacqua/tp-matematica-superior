@@ -58,10 +58,12 @@ namespace NCOM.Operaciones_avanzadas
 
             if (comboBoxOperacion.Text == "Radicación")
             {
-                ComplejoPolar resultado = Potenciacion.Calcular(complejoPolar, Convert.ToDouble(textBoxExpOrden.Text));
+                ComplejoPolar[] resultados = Radicacion.Calcular(complejoPolar, Convert.ToDouble(textBoxExpOrden.Text));
                 labelResultado.Visible = true;
-                textBoxResBin.Text = Parser.BinAStringBin(resultado.PasarABinomica());
-                textBoxResPol.Text = Parser.BinAStringPol(resultado.PasarABinomica());
+                buttonAnterior.Visible = true;
+                buttonSiguiente.Visible = true;
+                textBoxResBin.Text = Parser.BinAStringBin(resultados[0].PasarABinomica());
+                textBoxResPol.Text = Parser.BinAStringPol(resultados[0].PasarABinomica());
             }
             
         }
