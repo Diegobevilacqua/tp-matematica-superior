@@ -25,8 +25,5 @@ namespace NCOM
         {
             return new ComplejoPolar(Amplitud, FaseInicial).PasarABinomica();
         }
-
-
-
     }
 }

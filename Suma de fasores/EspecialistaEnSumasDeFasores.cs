@@ -19,8 +19,7 @@ namespace NCOM.Operaciones_básicas
 
         public ComplejoBinomica SumarFasores()
         {
-
-            this.VerificarYConvertirTiposOnda();
+            VerificarYConvertirTiposOnda();
 
             if (UnaOnda.Frecuencia != OtraOnda.Frecuencia)
                 throw new FrecuenciasDistintasException();
@@ -40,6 +39,7 @@ namespace NCOM.Operaciones_básicas
             if (UnaOnda.Tipo != OtraOnda.Tipo)
             {
                 OtraOnda.Tipo = UnaOnda.Tipo;
+
                 if (UnaOnda.Tipo == TipoDeOnda.COSENO)
                     OtraOnda.FaseInicial -= Math.PI / 2;
                 else
@@ -47,7 +47,4 @@ namespace NCOM.Operaciones_básicas
             }
         }
     }
-
-
-
 }

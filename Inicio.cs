@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using NCOM.Operaciones_avanzadas;
+using NCOM.Suma_de_fasores;
 
 namespace NCOM
 {
@@ -29,7 +30,9 @@ namespace NCOM
 
         private void PictureSFasores_Click(object sender, EventArgs e)
         {
-
+            SumaFasores sumaFasores = new SumaFasores(this);
+            sumaFasores.Show();
+            Hide();
         }
 
 
