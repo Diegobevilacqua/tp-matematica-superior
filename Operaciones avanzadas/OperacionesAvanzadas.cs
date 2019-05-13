@@ -35,12 +35,21 @@ namespace NCOM.Operaciones_avanzadas
         private void ButtonCalcular_Click(object sender, EventArgs e)
         {
             ComplejoBinomica complejoBinomica;
-            ComplejoPolar complejoPolar;
+            ComplejoPolar complejoPolar = null;
 
-            if (Parser.EstaEnBinomica(textBoxComplejo.Text) || Parser.EstaEnPolar(textBoxComplejo.Text))
+            if (comboBoxOperacion.Text == "Raíces primitivas")
             {
                 complejoBinomica = Parser.Parsear(textBoxComplejo.Text);
-                complejoPolar = complejoBinomica.PasarAPolar();
+
+                if (complejoBinomica != null)
+                    complejoPolar = complejoBinomica.PasarAPolar();
+            }
+
+            if (Parser.EstaEnBinomica(textBoxComplejo.Text) || Parser.EstaEnPolar(textBoxComplejo.Text) || textBoxComplejo.Text == "")
+            {
+                complejoBinomica = Parser.Parsear(textBoxComplejo.Text);
+                if (complejoBinomica != null)
+                    complejoPolar = complejoBinomica.PasarAPolar();
             }
             else
             {
@@ -53,6 +62,7 @@ namespace NCOM.Operaciones_avanzadas
                 labelResultado.Visible = true;
                 textBoxResBin.Text = Parser.BinAStringBin(resultado.PasarABinomica());
                 textBoxResPol.Text = Parser.BinAStringPol(resultado.PasarABinomica());
+                return;
             }
 
             if (comboBoxOperacion.Text == "Radicación")
@@ -64,8 +74,23 @@ namespace NCOM.Operaciones_avanzadas
                 buttonSiguiente.Visible = true;
                 textBoxResBin.Text = Parser.BinAStringBin(resultados[resultado].PasarABinomica());
                 textBoxResPol.Text = Parser.BinAStringPol(resultados[resultado].PasarABinomica());
+                return;
             }
             
+            if (comboBoxOperacion.Text == "Raíces primitivas")
+            {
+                resultado = 0;
+                labelExpOrden.Text = "Introduzca el orden de las raíces primitivas";
+                resultados = RaicesPrimitivas.Calcular(Convert.ToInt32(textBoxExpOrden.Text));
+                labelResultado.Visible = true;
+                buttonAnterior.Visible = true;
+                buttonSiguiente.Visible = true;
+                textBoxResBin.Text = Parser.BinAStringBin(resultados[resultado].PasarABinomica());
+                textBoxResPol.Text = Parser.BinAStringPol(resultados[resultado].PasarABinomica());
+                return;
+            }
+
+            // Lanzar excepciones si faltan campos por llenar 
         }
 
         private void ButtonAnterior_Click(object sender, EventArgs e)

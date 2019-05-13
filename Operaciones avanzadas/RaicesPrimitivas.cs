@@ -12,12 +12,29 @@ namespace NCOM.Operaciones_avanzadas
         {
             ComplejoPolar[] raices = new ComplejoPolar[orden];
             
-            for (int k = 0; k < orden - 1; k++)
+            for (int k = 0; k < orden; k++)
             {
-                raices[k] = new ComplejoPolar(1, ((2 * Math.PI) * k) / orden);
+                ComplejoPolar nuevoComplejo = new ComplejoPolar(1, ((2 * Math.PI) * k) / orden);
+
+                if (MCD(k + 1, orden) == 1)
+                    raices[k] = nuevoComplejo;
             }
 
             return raices;
+        }
+
+        public static int MCD(int a, int b)
+        {
+            int res;
+
+            do
+            {
+                res = b;
+                b = a % b;
+                a = res;
+            } while (b != 0);
+
+            return res;
         }
     }
 }

@@ -47,6 +47,9 @@ namespace NCOM
                 return complejoPolar.PasarABinomica();
             }
 
+            if (textoComplejo == "")
+                return null;
+
             throw new FormatException("Los números no se ingresaron en el formato correcto.");
         }
 
