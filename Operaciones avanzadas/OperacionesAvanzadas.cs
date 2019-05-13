@@ -51,6 +51,7 @@ namespace NCOM.Operaciones_avanzadas
             if (comboBoxOperacion.Text == "Potenciación")
             {
                 ComplejoPolar resultado = Potenciacion.Calcular(complejoPolar, Convert.ToDouble(textBoxExpOrden.Text));
+                labelResultado.Visible = true;
                 textBoxResBin.Text = Parser.BinAStringBin(resultado.PasarABinomica());
                 textBoxResPol.Text = Parser.BinAStringPol(resultado.PasarABinomica());
             }
@@ -58,6 +59,7 @@ namespace NCOM.Operaciones_avanzadas
             if (comboBoxOperacion.Text == "Radicación")
             {
                 ComplejoPolar resultado = Potenciacion.Calcular(complejoPolar, Convert.ToDouble(textBoxExpOrden.Text));
+                labelResultado.Visible = true;
                 textBoxResBin.Text = Parser.BinAStringBin(resultado.PasarABinomica());
                 textBoxResPol.Text = Parser.BinAStringPol(resultado.PasarABinomica());
             }

@@ -25,7 +25,7 @@ namespace NCOM
             Regex regexBinomica = new Regex(@"\s*\(\s*([\+-]?\d+(?:,\d+)?)\s*,\s*([\+-]?\d+(?:,\d+)?)\s*\)\s*");
             Regex regexPolar = new Regex(@"\s*\[\s*([\+-]?\d+(?:,\d+)?)\s*;\s*([\+-]?\d+(?:,\d+)?)\s*\]\s*");
 
-            if (EstaEnPolar(textoComplejo))
+            if (EstaEnBinomica(textoComplejo))
             {
                 Match matchBin = regexBinomica.Match(textoComplejo);
 
@@ -36,7 +36,7 @@ namespace NCOM
                 return complejoBin;
             }
             else 
-            if (EstaEnBinomica(textoComplejo))
+            if (EstaEnPolar(textoComplejo))
             {
                 Match matchPol = regexPolar.Match(textoComplejo);
 

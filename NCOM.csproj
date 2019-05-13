@@ -69,6 +69,7 @@
     </Compile>
     <Compile Include="Operaciones avanzadas\Potenciacion.cs" />
     <Compile Include="Operaciones avanzadas\Radicacion.cs" />
+    <Compile Include="Operaciones avanzadas\RaicesPrimitivas.cs" />
     <Compile Include="Operaciones básicas\OperacionesBasicas.cs" />
     <Compile Include="Operaciones básicas\OperarComplejos.cs">
       <SubType>Form</SubType>
