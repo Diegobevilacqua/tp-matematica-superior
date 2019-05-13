@@ -8,7 +8,7 @@ namespace NCOM.Operaciones_avanzadas
 {
     public static class RaicesPrimitivas
     {
-        /*
+        
         public static ComplejoPolar[] Calcular(int orden)
         {
             ComplejoPolar[] raices = new ComplejoPolar[orden];
@@ -18,6 +18,5 @@ namespace NCOM.Operaciones_avanzadas
 
             }
         }
-        */
     }
 }

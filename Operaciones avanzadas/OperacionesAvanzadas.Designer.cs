@@ -206,6 +206,7 @@
             this.buttonAnterior.Text = "Anterior";
             this.buttonAnterior.UseVisualStyleBackColor = true;
             this.buttonAnterior.Visible = false;
+            this.buttonAnterior.Click += new System.EventHandler(this.ButtonAnterior_Click);
             // 
             // buttonSiguiente
             // 
@@ -217,6 +218,7 @@
             this.buttonSiguiente.Text = "Siguiente";
             this.buttonSiguiente.UseVisualStyleBackColor = true;
             this.buttonSiguiente.Visible = false;
+            this.buttonSiguiente.Click += new System.EventHandler(this.ButtonSiguiente_Click);
             // 
             // OperacionesAvanzadas
             // 

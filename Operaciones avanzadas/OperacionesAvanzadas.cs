@@ -13,9 +13,8 @@ namespace NCOM.Operaciones_avanzadas
     public partial class OperacionesAvanzadas : Form
     {
         private Inicio Inicio;
-        private ComplejoPolar ComplejoPolar;
-        private double ExpOrden;
-
+        ComplejoPolar[] resultados;
+        int resultado;
         public OperacionesAvanzadas(Inicio _inicio)
         {
             InitializeComponent();
@@ -58,14 +57,39 @@ namespace NCOM.Operaciones_avanzadas
 
             if (comboBoxOperacion.Text == "Radicación")
             {
-                ComplejoPolar[] resultados = Radicacion.Calcular(complejoPolar, Convert.ToDouble(textBoxExpOrden.Text));
+                resultado = 0;
+                resultados = Radicacion.Calcular(complejoPolar, Convert.ToDouble(textBoxExpOrden.Text));
                 labelResultado.Visible = true;
                 buttonAnterior.Visible = true;
                 buttonSiguiente.Visible = true;
-                textBoxResBin.Text = Parser.BinAStringBin(resultados[0].PasarABinomica());
-                textBoxResPol.Text = Parser.BinAStringPol(resultados[0].PasarABinomica());
+                textBoxResBin.Text = Parser.BinAStringBin(resultados[resultado].PasarABinomica());
+                textBoxResPol.Text = Parser.BinAStringPol(resultados[resultado].PasarABinomica());
             }
             
+        }
+
+        private void ButtonAnterior_Click(object sender, EventArgs e)
+        {
+            if (resultado > 0)
+                resultado--;
+
+            textBoxResBin.Text = Parser.BinAStringBin(resultados[resultado].PasarABinomica());
+            textBoxResPol.Text = Parser.BinAStringPol(resultados[resultado].PasarABinomica());
+        }
+
+        private void ButtonSiguiente_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                resultado++;
+
+                textBoxResBin.Text = Parser.BinAStringBin(resultados[resultado].PasarABinomica());
+                textBoxResPol.Text = Parser.BinAStringPol(resultados[resultado].PasarABinomica());
+            }
+            catch
+            {
+                MessageBox.Show("No hay más raíces.");
+            }
         }
     }
 }

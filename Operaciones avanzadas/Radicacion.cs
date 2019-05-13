@@ -12,10 +12,10 @@ namespace NCOM.Operaciones_avanzadas
         {
             ComplejoPolar[] raices = new ComplejoPolar[(int)orden];
 
-            for (int k = 0; k < orden - 1; k++)
+            for (int k = 0; k < orden; k++)
             {
                 double modulo = Math.Pow(complejoPolar.Modulo, 1 / orden);
-                double argumento = (complejoPolar.Argumento + 2 * k * Math.PI) / orden;
+                double argumento = (complejoPolar.Argumento + ((2 * k) * Math.PI)) / orden;
                 raices[k] = new ComplejoPolar(modulo, argumento);
             }
 
