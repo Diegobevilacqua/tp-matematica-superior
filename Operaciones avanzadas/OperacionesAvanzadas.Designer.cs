@@ -59,35 +59,35 @@
             // 
             // textBoxComplejo
             // 
-            this.textBoxComplejo.Location = new System.Drawing.Point(467, 160);
+            this.textBoxComplejo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxComplejo.Location = new System.Drawing.Point(468, 161);
             this.textBoxComplejo.Name = "textBoxComplejo";
-            this.textBoxComplejo.Size = new System.Drawing.Size(198, 20);
+            this.textBoxComplejo.Size = new System.Drawing.Size(198, 26);
             this.textBoxComplejo.TabIndex = 9;
-            this.textBoxComplejo.Visible = false;
             // 
             // labelComplejo
             // 
             this.labelComplejo.AutoSize = true;
             this.labelComplejo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelComplejo.ForeColor = System.Drawing.Color.White;
-            this.labelComplejo.Location = new System.Drawing.Point(12, 157);
+            this.labelComplejo.Location = new System.Drawing.Point(12, 163);
             this.labelComplejo.Name = "labelComplejo";
             this.labelComplejo.Size = new System.Drawing.Size(235, 21);
             this.labelComplejo.TabIndex = 23;
             this.labelComplejo.Text = "Introduzca un número complejo:";
             this.labelComplejo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelComplejo.Visible = false;
             // 
             // comboBoxOperacion
             // 
+            this.comboBoxOperacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxOperacion.FormattingEnabled = true;
             this.comboBoxOperacion.Items.AddRange(new object[] {
             "Potenciación",
             "Radicación",
             "Raíces primitivas"});
-            this.comboBoxOperacion.Location = new System.Drawing.Point(467, 107);
+            this.comboBoxOperacion.Location = new System.Drawing.Point(468, 111);
             this.comboBoxOperacion.Name = "comboBoxOperacion";
-            this.comboBoxOperacion.Size = new System.Drawing.Size(198, 21);
+            this.comboBoxOperacion.Size = new System.Drawing.Size(198, 28);
             this.comboBoxOperacion.TabIndex = 24;
             // 
             // labelOperacion
@@ -95,7 +95,7 @@
             this.labelOperacion.AutoSize = true;
             this.labelOperacion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelOperacion.ForeColor = System.Drawing.Color.White;
-            this.labelOperacion.Location = new System.Drawing.Point(12, 107);
+            this.labelOperacion.Location = new System.Drawing.Point(12, 113);
             this.labelOperacion.Name = "labelOperacion";
             this.labelOperacion.Size = new System.Drawing.Size(242, 21);
             this.labelOperacion.TabIndex = 25;
@@ -107,21 +107,20 @@
             this.labelExpOrden.AutoSize = true;
             this.labelExpOrden.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelExpOrden.ForeColor = System.Drawing.Color.White;
-            this.labelExpOrden.Location = new System.Drawing.Point(12, 211);
+            this.labelExpOrden.Location = new System.Drawing.Point(8, 211);
             this.labelExpOrden.Name = "labelExpOrden";
             this.labelExpOrden.Size = new System.Drawing.Size(391, 21);
             this.labelExpOrden.TabIndex = 26;
             this.labelExpOrden.Text = "Introduzca el valor del exponente o del orden de la raíz:";
             this.labelExpOrden.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelExpOrden.Visible = false;
             // 
             // textBoxExpOrden
             // 
-            this.textBoxExpOrden.Location = new System.Drawing.Point(467, 214);
+            this.textBoxExpOrden.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxExpOrden.Location = new System.Drawing.Point(468, 206);
             this.textBoxExpOrden.Name = "textBoxExpOrden";
-            this.textBoxExpOrden.Size = new System.Drawing.Size(198, 20);
+            this.textBoxExpOrden.Size = new System.Drawing.Size(198, 26);
             this.textBoxExpOrden.TabIndex = 27;
-            this.textBoxExpOrden.Visible = false;
             // 
             // labelResultado
             // 
@@ -134,20 +133,18 @@
             this.labelResultado.TabIndex = 30;
             this.labelResultado.Text = "Resultado";
             this.labelResultado.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelResultado.Visible = false;
             // 
             // labelResPol
             // 
             this.labelResPol.AutoSize = true;
             this.labelResPol.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelResPol.ForeColor = System.Drawing.Color.White;
-            this.labelResPol.Location = new System.Drawing.Point(350, 432);
+            this.labelResPol.Location = new System.Drawing.Point(363, 432);
             this.labelResPol.Name = "labelResPol";
             this.labelResPol.Size = new System.Drawing.Size(98, 21);
             this.labelResPol.TabIndex = 36;
             this.labelResPol.Text = "Forma polar:";
             this.labelResPol.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelResPol.Visible = false;
             // 
             // labelResBin
             // 
@@ -160,23 +157,22 @@
             this.labelResBin.TabIndex = 35;
             this.labelResBin.Text = "Forma binómica:";
             this.labelResBin.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelResBin.Visible = false;
             // 
             // textBoxResBin
             // 
-            this.textBoxResBin.Location = new System.Drawing.Point(153, 434);
+            this.textBoxResBin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxResBin.Location = new System.Drawing.Point(142, 429);
             this.textBoxResBin.Name = "textBoxResBin";
-            this.textBoxResBin.Size = new System.Drawing.Size(173, 20);
+            this.textBoxResBin.Size = new System.Drawing.Size(173, 26);
             this.textBoxResBin.TabIndex = 37;
-            this.textBoxResBin.Visible = false;
             // 
             // textBoxResPol
             // 
-            this.textBoxResPol.Location = new System.Drawing.Point(465, 434);
+            this.textBoxResPol.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxResPol.Location = new System.Drawing.Point(467, 430);
             this.textBoxResPol.Name = "textBoxResPol";
-            this.textBoxResPol.Size = new System.Drawing.Size(198, 20);
+            this.textBoxResPol.Size = new System.Drawing.Size(198, 26);
             this.textBoxResPol.TabIndex = 38;
-            this.textBoxResPol.Visible = false;
             // 
             // buttonAtras
             // 

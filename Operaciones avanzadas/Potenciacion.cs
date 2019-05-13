@@ -10,7 +10,7 @@ namespace NCOM.Operaciones_avanzadas
     {
         public static ComplejoPolar Calcular(ComplejoPolar complejoPolar, double exponente)
         {
-            return new ComplejoPolar(Math.Pow(complejoPolar.Argumento, exponente), complejoPolar.Argumento * exponente);
+            return new ComplejoPolar(Math.Pow(complejoPolar.Modulo, exponente), complejoPolar.Argumento * exponente);
         }
     }
 }
