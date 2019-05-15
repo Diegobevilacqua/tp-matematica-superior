@@ -33,34 +33,35 @@ namespace NCOM.Suma_de_fasores
 
         private void ButtonCalcular_Click(object sender, EventArgs e)
         {
-            if (textBoxFrecuencia1.Text != textBoxFrecuencia2.Text)
+            try
+            {
+                TipoDeOnda tipo1, tipo2;
+
+                tipo1 = (comboBoxTipo1.Text == "SENO") ? TipoDeOnda.SENO : TipoDeOnda.COSENO;
+                tipo2 = (comboBoxTipo2.Text == "SENO") ? TipoDeOnda.SENO : TipoDeOnda.COSENO;
+
+                Onda onda1 = new Onda(Convert.ToDouble(textBoxAmplitud1.Text),
+                                      Convert.ToDouble(textBoxFrecuencia1.Text),
+                                      Convert.ToDouble(textBoxFase1.Text),
+                                      tipo1);
+
+                Onda onda2 = new Onda(Convert.ToDouble(textBoxAmplitud2.Text),
+                                      Convert.ToDouble(textBoxFrecuencia2.Text),
+                                      Convert.ToDouble(textBoxFase2.Text),
+                                      tipo2);
+
+                SumaDeFasores suma = new SumaDeFasores(onda1, onda2);
+                Onda ondaResultado = suma.SumarOndas();
+
+                textBoxAmplitud3.Text = Convert.ToString(ondaResultado.Amplitud);
+                textBoxFrecuencia3.Text = Convert.ToString(ondaResultado.Frecuencia);
+                textBoxFase3.Text = Convert.ToString(ondaResultado.FaseInicial);
+                textBoxTipo3.Text = Convert.ToString(ondaResultado.Tipo);
+            }
+            catch
             {
                 MessageBox.Show("Las funciones no pueden sumarse utlizando fasores dado que sus frecuencias son diferentes.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
             }
-
-            TipoDeOnda tipo1, tipo2;
-
-            tipo1 = (comboBoxTipo1.Text == "SENO") ? TipoDeOnda.SENO : TipoDeOnda.COSENO;
-            tipo2 = (comboBoxTipo2.Text == "SENO") ? TipoDeOnda.SENO : TipoDeOnda.COSENO;
-
-            Onda onda1 = new Onda(Convert.ToDouble(textBoxAmplitud1.Text),
-                                  Convert.ToDouble(textBoxFrecuencia1.Text),
-                                  Convert.ToDouble(textBoxFase1.Text),
-                                  tipo1);
-
-            Onda onda2 = new Onda(Convert.ToDouble(textBoxAmplitud2.Text),
-                                  Convert.ToDouble(textBoxFrecuencia2.Text),
-                                  Convert.ToDouble(textBoxFase2.Text),
-                                  tipo2);
-
-            SumaDeFasores suma = new SumaDeFasores(onda1, onda2);
-            Onda ondaResultado = suma.SumarOndas();
-
-            textBoxAmplitud3.Text = Convert.ToString(ondaResultado.Amplitud);
-            textBoxFrecuencia3.Text = Convert.ToString(ondaResultado.Frecuencia);
-            textBoxFase3.Text = Convert.ToString(ondaResultado.FaseInicial);
-            textBoxTipo3.Text = Convert.ToString(ondaResultado.Tipo);
         }
     }
 }
