@@ -37,8 +37,8 @@ namespace NCOM.Suma_de_fasores
             {
                 TipoDeOnda tipo1, tipo2;
 
-                tipo1 = (comboBoxTipo1.Text == "SENO") ? TipoDeOnda.SENO : TipoDeOnda.COSENO;
-                tipo2 = (comboBoxTipo2.Text == "SENO") ? TipoDeOnda.SENO : TipoDeOnda.COSENO;
+                tipo1 = (comboBoxTipo1.Text == "Seno") ? TipoDeOnda.SENO : TipoDeOnda.COSENO;
+                tipo2 = (comboBoxTipo2.Text == "Seno") ? TipoDeOnda.SENO : TipoDeOnda.COSENO;
 
                 Onda onda1 = new Onda(Convert.ToDouble(textBoxAmplitud1.Text),
                                       Convert.ToDouble(textBoxFrecuencia1.Text),
