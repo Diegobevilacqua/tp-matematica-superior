@@ -80,7 +80,7 @@
     <Compile Include="Parser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Suma de fasores\EspecialistaEnSumasDeFasores.cs" />
+    <Compile Include="Suma de fasores\SumaDeFasores.cs" />
     <Compile Include="Excepciones\FrecuenciasDistintasException.cs" />
     <Compile Include="Suma de fasores\SumaFasores.cs">
       <SubType>Form</SubType>

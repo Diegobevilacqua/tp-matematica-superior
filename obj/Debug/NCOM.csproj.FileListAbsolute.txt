@@ -28,3 +28,4 @@ C:\Users\Diego\source\repos\NCOM\bin\Debug\nunit.framework.pdb
 C:\Users\Diego\source\repos\NCOM\bin\Debug\nunit.framework.xml
 C:\Users\Diego\source\repos\NCOM\obj\Debug\NCOM.csproj.CopyComplete
 C:\Users\Diego\source\repos\NCOM\obj\Debug\NCOM.Operaciones_avanzadas.OperacionesAvanzadas.resources
+C:\Users\Diego\source\repos\NCOM\obj\Debug\NCOM.Suma_de_fasores.SumaFasores.resources

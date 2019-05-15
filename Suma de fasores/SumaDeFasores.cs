@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace NCOM.Operaciones_básicas
 {
-    public class EspecialistaEnSumasDeFasores
+    public class SumaDeFasores
     {
         public Onda UnaOnda { get; set; }
         public Onda OtraOnda { get; set; }
 
-        public EspecialistaEnSumasDeFasores(Onda unaOnda, Onda otraOnda)
+        public SumaDeFasores(Onda unaOnda, Onda otraOnda)
         {
             UnaOnda = unaOnda;
             OtraOnda = otraOnda;
@@ -30,7 +30,6 @@ namespace NCOM.Operaciones_básicas
         public Onda SumarOndas()
         {
             ComplejoPolar fasoresSumados = SumarFasores().PasarAPolar();
-
             return new Onda(fasoresSumados.Modulo, UnaOnda.Frecuencia, fasoresSumados.Argumento, UnaOnda.Tipo);
         }
 

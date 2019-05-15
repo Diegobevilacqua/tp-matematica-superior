@@ -48,7 +48,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.comboBoxTipo3 = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.textBoxFrecuencia3 = new System.Windows.Forms.TextBox();
             this.textBoxFase3 = new System.Windows.Forms.TextBox();
@@ -58,6 +57,7 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.buttonCalcular = new System.Windows.Forms.Button();
+            this.textBoxTipo3 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label3
@@ -266,17 +266,6 @@
             this.label11.Text = "Segunda onda";
             this.label11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // comboBoxTipo3
-            // 
-            this.comboBoxTipo3.FormattingEnabled = true;
-            this.comboBoxTipo3.Items.AddRange(new object[] {
-            "Seno",
-            "Coseno"});
-            this.comboBoxTipo3.Location = new System.Drawing.Point(831, 378);
-            this.comboBoxTipo3.Name = "comboBoxTipo3";
-            this.comboBoxTipo3.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxTipo3.TabIndex = 37;
-            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -369,14 +358,21 @@
             this.buttonCalcular.UseVisualStyleBackColor = true;
             this.buttonCalcular.Click += new System.EventHandler(this.ButtonCalcular_Click);
             // 
+            // textBoxTipo3
+            // 
+            this.textBoxTipo3.Location = new System.Drawing.Point(831, 378);
+            this.textBoxTipo3.Name = "textBoxTipo3";
+            this.textBoxTipo3.Size = new System.Drawing.Size(121, 20);
+            this.textBoxTipo3.TabIndex = 42;
+            // 
             // SumaFasores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
             this.ClientSize = new System.Drawing.Size(964, 470);
+            this.Controls.Add(this.textBoxTipo3);
             this.Controls.Add(this.buttonCalcular);
-            this.Controls.Add(this.comboBoxTipo3);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.textBoxFrecuencia3);
             this.Controls.Add(this.textBoxFase3);
@@ -435,7 +431,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.ComboBox comboBoxTipo3;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox textBoxFrecuencia3;
         private System.Windows.Forms.TextBox textBoxFase3;
@@ -445,5 +440,6 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button buttonCalcular;
+        private System.Windows.Forms.TextBox textBoxTipo3;
     }
 }
