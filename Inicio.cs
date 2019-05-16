@@ -32,6 +32,7 @@ namespace NCOM
         {
             SumaFasores sumaFasores = new SumaFasores(this);
             sumaFasores.Show();
+            sumaFasores.FormClosing += (obj, args) => { this.Close(); };
             Hide();
         }
 
@@ -40,21 +41,11 @@ namespace NCOM
         {
             OperacionesAvanzadas operacionesAvanzadas = new OperacionesAvanzadas(this);
             operacionesAvanzadas.Show();
-            Hide();
-        }
-        private void PictureRadic_Click(object sender, EventArgs e)
-        {
-            OperacionesAvanzadas operacionesAvanzadas = new OperacionesAvanzadas(this);
-            operacionesAvanzadas.Show();
+            operacionesAvanzadas.FormClosing += (obj, args) => { this.Close(); };
             Hide();
         }
 
 
-
-        private void LaberRad_Click(object sender, EventArgs e)
-        {
-            PictureRadic_Click(sender, e);
-        }
 
         private void LabelPot_Click(object sender, EventArgs e)
         {
