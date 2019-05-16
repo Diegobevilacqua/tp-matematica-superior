@@ -28,8 +28,10 @@ namespace NCOM.Operaciones_avanzadas
 
         private void ButtonAtras_Click(object sender, EventArgs e)
         {
-            Inicio.Show();
-            Close();
+            Inicio formInicio = new Inicio();
+            formInicio.Show();
+            formInicio.FormClosing += (obj, args) => { this.Close(); };
+            this.Hide();
         }
 
         private void ButtonCalcular_Click(object sender, EventArgs e)

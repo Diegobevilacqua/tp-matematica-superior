@@ -29,3 +29,5 @@ C:\Users\Diego\source\repos\NCOM\bin\Debug\nunit.framework.xml
 C:\Users\Diego\source\repos\NCOM\obj\Debug\NCOM.csproj.CopyComplete
 C:\Users\Diego\source\repos\NCOM\obj\Debug\NCOM.Operaciones_avanzadas.OperacionesAvanzadas.resources
 C:\Users\Diego\source\repos\NCOM\obj\Debug\NCOM.Suma_de_fasores.SumaFasores.resources
+C:\Users\Franco\Source\Repos\tp-matematica-superior\obj\Debug\NCOM.Operaciones_avanzadas.OperacionesAvanzadas.resources
+C:\Users\Franco\Source\Repos\tp-matematica-superior\obj\Debug\NCOM.Suma_de_fasores.SumaFasores.resources
