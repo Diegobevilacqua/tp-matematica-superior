@@ -46,9 +46,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Light", 25.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(12, 21);
+            this.label1.Location = new System.Drawing.Point(16, 26);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(328, 46);
+            this.label1.Size = new System.Drawing.Size(417, 59);
             this.label1.TabIndex = 0;
             this.label1.Text = "¡Bienvenido a NCOM!";
             // 
@@ -56,10 +57,10 @@
             // 
             this.pictureOpBasicas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureOpBasicas.Image = ((System.Drawing.Image)(resources.GetObject("pictureOpBasicas.Image")));
-            this.pictureOpBasicas.Location = new System.Drawing.Point(37, 120);
-            this.pictureOpBasicas.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureOpBasicas.Location = new System.Drawing.Point(49, 148);
+            this.pictureOpBasicas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureOpBasicas.Name = "pictureOpBasicas";
-            this.pictureOpBasicas.Size = new System.Drawing.Size(276, 54);
+            this.pictureOpBasicas.Size = new System.Drawing.Size(368, 66);
             this.pictureOpBasicas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureOpBasicas.TabIndex = 1;
             this.pictureOpBasicas.TabStop = false;
@@ -69,10 +70,10 @@
             // 
             this.pictureSFasores.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureSFasores.Image = ((System.Drawing.Image)(resources.GetObject("pictureSFasores.Image")));
-            this.pictureSFasores.Location = new System.Drawing.Point(38, 297);
-            this.pictureSFasores.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureSFasores.Location = new System.Drawing.Point(51, 366);
+            this.pictureSFasores.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureSFasores.Name = "pictureSFasores";
-            this.pictureSFasores.Size = new System.Drawing.Size(276, 54);
+            this.pictureSFasores.Size = new System.Drawing.Size(368, 66);
             this.pictureSFasores.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureSFasores.TabIndex = 2;
             this.pictureSFasores.TabStop = false;
@@ -85,11 +86,10 @@
             this.labelPot.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelPot.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPot.ForeColor = System.Drawing.Color.White;
-            this.labelPot.Location = new System.Drawing.Point(58, 221);
-            this.labelPot.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelPot.Location = new System.Drawing.Point(77, 272);
             this.labelPot.Name = "labelPot";
-            this.labelPot.Size = new System.Drawing.Size(243, 30);
-            this.labelPot.TabIndex = 6;
+            this.labelPot.Size = new System.Drawing.Size(315, 38);
+            this.labelPot.TabIndex = 1;
             this.labelPot.Text = "Operaciones avanzadas";
             this.labelPot.Click += new System.EventHandler(this.LabelPot_Click);
             // 
@@ -97,10 +97,10 @@
             // 
             this.picturePot.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picturePot.Image = ((System.Drawing.Image)(resources.GetObject("picturePot.Image")));
-            this.picturePot.Location = new System.Drawing.Point(37, 209);
-            this.picturePot.Margin = new System.Windows.Forms.Padding(2);
+            this.picturePot.Location = new System.Drawing.Point(49, 257);
+            this.picturePot.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picturePot.Name = "picturePot";
-            this.picturePot.Size = new System.Drawing.Size(276, 56);
+            this.picturePot.Size = new System.Drawing.Size(368, 69);
             this.picturePot.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picturePot.TabIndex = 5;
             this.picturePot.TabStop = false;
@@ -113,11 +113,10 @@
             this.labelSFasores.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelSFasores.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
             this.labelSFasores.ForeColor = System.Drawing.Color.White;
-            this.labelSFasores.Location = new System.Drawing.Point(97, 308);
-            this.labelSFasores.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelSFasores.Location = new System.Drawing.Point(129, 379);
             this.labelSFasores.Name = "labelSFasores";
-            this.labelSFasores.Size = new System.Drawing.Size(163, 32);
-            this.labelSFasores.TabIndex = 24;
+            this.labelSFasores.Size = new System.Drawing.Size(204, 41);
+            this.labelSFasores.TabIndex = 2;
             this.labelSFasores.Text = "Suma Fasores";
             this.labelSFasores.Click += new System.EventHandler(this.LabelSFasores_Click);
             // 
@@ -128,20 +127,19 @@
             this.labelOpBasicas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelOpBasicas.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelOpBasicas.ForeColor = System.Drawing.Color.White;
-            this.labelOpBasicas.Location = new System.Drawing.Point(66, 129);
-            this.labelOpBasicas.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelOpBasicas.Location = new System.Drawing.Point(88, 159);
             this.labelOpBasicas.Name = "labelOpBasicas";
-            this.labelOpBasicas.Size = new System.Drawing.Size(235, 32);
-            this.labelOpBasicas.TabIndex = 25;
+            this.labelOpBasicas.Size = new System.Drawing.Size(295, 41);
+            this.labelOpBasicas.TabIndex = 0;
             this.labelOpBasicas.Text = "Operaciones Básicas";
             this.labelOpBasicas.Click += new System.EventHandler(this.LabelOpBasicas_Click);
             // 
             // Inicio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.ClientSize = new System.Drawing.Size(353, 384);
+            this.ClientSize = new System.Drawing.Size(471, 473);
             this.Controls.Add(this.labelOpBasicas);
             this.Controls.Add(this.labelSFasores);
             this.Controls.Add(this.labelPot);
@@ -149,6 +147,7 @@
             this.Controls.Add(this.pictureSFasores);
             this.Controls.Add(this.pictureOpBasicas);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Inicio";
             this.Text = "Inicio";
             ((System.ComponentModel.ISupportInitialize)(this.pictureOpBasicas)).EndInit();

@@ -68,7 +68,7 @@
             this.comboBoxOperacion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxOperacion.Name = "comboBoxOperacion";
             this.comboBoxOperacion.Size = new System.Drawing.Size(173, 33);
-            this.comboBoxOperacion.TabIndex = 4;
+            this.comboBoxOperacion.TabIndex = 1;
             // 
             // label3
             // 
@@ -116,7 +116,7 @@
             this.textComplejo1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textComplejo1.Name = "textComplejo1";
             this.textComplejo1.Size = new System.Drawing.Size(173, 34);
-            this.textComplejo1.TabIndex = 11;
+            this.textComplejo1.TabIndex = 0;
             // 
             // label1
             // 
@@ -139,7 +139,7 @@
             this.textComplejo2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textComplejo2.Name = "textComplejo2";
             this.textComplejo2.Size = new System.Drawing.Size(173, 34);
-            this.textComplejo2.TabIndex = 15;
+            this.textComplejo2.TabIndex = 2;
             // 
             // label2
             // 
@@ -244,7 +244,7 @@
             this.labelContinuar.Location = new System.Drawing.Point(311, 350);
             this.labelContinuar.Name = "labelContinuar";
             this.labelContinuar.Size = new System.Drawing.Size(102, 32);
-            this.labelContinuar.TabIndex = 23;
+            this.labelContinuar.TabIndex = 3;
             this.labelContinuar.Text = "Calcular";
             this.labelContinuar.Click += new System.EventHandler(this.LabelContinuar_Click);
             // 
@@ -258,7 +258,7 @@
             this.labelAtras.Location = new System.Drawing.Point(52, 603);
             this.labelAtras.Name = "labelAtras";
             this.labelAtras.Size = new System.Drawing.Size(72, 32);
-            this.labelAtras.TabIndex = 24;
+            this.labelAtras.TabIndex = 6;
             this.labelAtras.Text = "Atrás";
             this.labelAtras.Click += new System.EventHandler(this.LabelAtras_Click);
             // 
@@ -269,7 +269,7 @@
             this.textResultadoBin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textResultadoBin.Name = "textResultadoBin";
             this.textResultadoBin.Size = new System.Drawing.Size(168, 34);
-            this.textResultadoBin.TabIndex = 25;
+            this.textResultadoBin.TabIndex = 4;
             this.textResultadoBin.Visible = false;
             // 
             // textResultadoPol
@@ -279,7 +279,7 @@
             this.textResultadoPol.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textResultadoPol.Name = "textResultadoPol";
             this.textResultadoPol.Size = new System.Drawing.Size(173, 34);
-            this.textResultadoPol.TabIndex = 26;
+            this.textResultadoPol.TabIndex = 5;
             this.textResultadoPol.Visible = false;
             // 
             // labelResBin

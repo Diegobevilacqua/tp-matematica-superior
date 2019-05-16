@@ -87,7 +87,7 @@
             this.buttonAtras.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonAtras.Name = "buttonAtras";
             this.buttonAtras.Size = new System.Drawing.Size(124, 40);
-            this.buttonAtras.TabIndex = 10;
+            this.buttonAtras.TabIndex = 13;
             this.buttonAtras.Text = "Atrás";
             this.buttonAtras.UseVisualStyleBackColor = true;
             this.buttonAtras.Click += new System.EventHandler(this.ButtonAtras_Click);
@@ -150,7 +150,7 @@
             this.textBoxAmplitud1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxAmplitud1.Name = "textBoxAmplitud1";
             this.textBoxAmplitud1.Size = new System.Drawing.Size(132, 22);
-            this.textBoxAmplitud1.TabIndex = 15;
+            this.textBoxAmplitud1.TabIndex = 0;
             // 
             // textBoxFase1
             // 
@@ -158,7 +158,7 @@
             this.textBoxFase1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxFase1.Name = "textBoxFase1";
             this.textBoxFase1.Size = new System.Drawing.Size(132, 22);
-            this.textBoxFase1.TabIndex = 16;
+            this.textBoxFase1.TabIndex = 2;
             // 
             // textBoxFrecuencia1
             // 
@@ -166,7 +166,7 @@
             this.textBoxFrecuencia1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxFrecuencia1.Name = "textBoxFrecuencia1";
             this.textBoxFrecuencia1.Size = new System.Drawing.Size(132, 22);
-            this.textBoxFrecuencia1.TabIndex = 17;
+            this.textBoxFrecuencia1.TabIndex = 1;
             // 
             // label6
             // 
@@ -191,7 +191,7 @@
             this.comboBoxTipo1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxTipo1.Name = "comboBoxTipo1";
             this.comboBoxTipo1.Size = new System.Drawing.Size(160, 24);
-            this.comboBoxTipo1.TabIndex = 19;
+            this.comboBoxTipo1.TabIndex = 3;
             // 
             // comboBoxTipo2
             // 
@@ -203,7 +203,7 @@
             this.comboBoxTipo2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxTipo2.Name = "comboBoxTipo2";
             this.comboBoxTipo2.Size = new System.Drawing.Size(160, 24);
-            this.comboBoxTipo2.TabIndex = 28;
+            this.comboBoxTipo2.TabIndex = 7;
             // 
             // label7
             // 
@@ -224,7 +224,7 @@
             this.textBoxFrecuencia2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxFrecuencia2.Name = "textBoxFrecuencia2";
             this.textBoxFrecuencia2.Size = new System.Drawing.Size(132, 22);
-            this.textBoxFrecuencia2.TabIndex = 26;
+            this.textBoxFrecuencia2.TabIndex = 5;
             // 
             // textBoxFase2
             // 
@@ -232,7 +232,7 @@
             this.textBoxFase2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxFase2.Name = "textBoxFase2";
             this.textBoxFase2.Size = new System.Drawing.Size(132, 22);
-            this.textBoxFase2.TabIndex = 25;
+            this.textBoxFase2.TabIndex = 6;
             // 
             // textBoxAmplitud2
             // 
@@ -240,7 +240,7 @@
             this.textBoxAmplitud2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxAmplitud2.Name = "textBoxAmplitud2";
             this.textBoxAmplitud2.Size = new System.Drawing.Size(132, 22);
-            this.textBoxAmplitud2.TabIndex = 24;
+            this.textBoxAmplitud2.TabIndex = 4;
             // 
             // label8
             // 
@@ -313,7 +313,7 @@
             this.textBoxFrecuencia3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxFrecuencia3.Name = "textBoxFrecuencia3";
             this.textBoxFrecuencia3.Size = new System.Drawing.Size(132, 22);
-            this.textBoxFrecuencia3.TabIndex = 35;
+            this.textBoxFrecuencia3.TabIndex = 10;
             // 
             // textBoxFase3
             // 
@@ -321,7 +321,7 @@
             this.textBoxFase3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxFase3.Name = "textBoxFase3";
             this.textBoxFase3.Size = new System.Drawing.Size(132, 22);
-            this.textBoxFase3.TabIndex = 34;
+            this.textBoxFase3.TabIndex = 11;
             // 
             // textBoxAmplitud3
             // 
@@ -329,7 +329,7 @@
             this.textBoxAmplitud3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxAmplitud3.Name = "textBoxAmplitud3";
             this.textBoxAmplitud3.Size = new System.Drawing.Size(132, 22);
-            this.textBoxAmplitud3.TabIndex = 33;
+            this.textBoxAmplitud3.TabIndex = 9;
             // 
             // label13
             // 
@@ -398,7 +398,7 @@
             this.buttonCalcular.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonCalcular.Name = "buttonCalcular";
             this.buttonCalcular.Size = new System.Drawing.Size(215, 53);
-            this.buttonCalcular.TabIndex = 41;
+            this.buttonCalcular.TabIndex = 8;
             this.buttonCalcular.Text = "Calcular";
             this.buttonCalcular.UseVisualStyleBackColor = false;
             this.buttonCalcular.Click += new System.EventHandler(this.ButtonCalcular_Click);
@@ -409,7 +409,7 @@
             this.textBoxTipo3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxTipo3.Name = "textBoxTipo3";
             this.textBoxTipo3.Size = new System.Drawing.Size(160, 22);
-            this.textBoxTipo3.TabIndex = 42;
+            this.textBoxTipo3.TabIndex = 12;
             // 
             // SumaFasores
             // 
