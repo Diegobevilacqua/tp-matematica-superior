@@ -61,7 +61,7 @@ namespace NCOM.Operaciones_avanzadas
                 }
                 if (comboBoxOperacion.Text == "Potenciación")
                 {
-                    ComplejoPolar resultado = Potenciacion.Calcular(complejoPolar, Convert.ToDouble(textBoxExpOrden.Text));
+                    ComplejoPolar resultado = Potenciacion.Calcular(complejoPolar, Convert.ToInt16(textBoxExpOrden.Text));
                     labelResultado.Visible = true;
                     textBoxResBin.Text = Parser.BinAStringBin(resultado.PasarABinomica());
                     textBoxResPol.Text = Parser.BinAStringPol(resultado.PasarABinomica());
@@ -71,7 +71,7 @@ namespace NCOM.Operaciones_avanzadas
                 if (comboBoxOperacion.Text == "Radicación")
                 {
                     resultado = 0;
-                    resultados = Radicacion.Calcular(complejoPolar, Convert.ToDouble(textBoxExpOrden.Text));
+                    resultados = Radicacion.Calcular(complejoPolar, Convert.ToInt16(textBoxExpOrden.Text));
                     labelResultado.Visible = true;
                     buttonAnterior.Visible = true;
                     buttonSiguiente.Visible = true;
@@ -84,7 +84,7 @@ namespace NCOM.Operaciones_avanzadas
                 {
                     resultado = 0;
                     labelExpOrden.Text = "Introduzca el orden de las raíces primitivas";
-                    resultados = RaicesPrimitivas.Calcular(Convert.ToInt32(textBoxExpOrden.Text));
+                    resultados = RaicesPrimitivas.Calcular(Convert.ToInt16(textBoxExpOrden.Text));
                     labelResultado.Visible = true;
                     buttonAnterior.Visible = true;
                     buttonSiguiente.Visible = true;
@@ -111,6 +111,11 @@ namespace NCOM.Operaciones_avanzadas
             {
                 MessageBox.Show("El valor introducido en el campo de 'exponente o raíz' debe ser un número positivo.",
     "Valor fuera del dominio", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch
+            {
+                MessageBox.Show("Los valores intducidos no son válidos",
+    "Valor no pertenece al dominio", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
