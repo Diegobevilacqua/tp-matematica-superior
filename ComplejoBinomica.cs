@@ -41,6 +41,23 @@ namespace NCOM
 
         public double Argumento()
         {
+            if (ParteImaginaria == 0 && ParteReal == 0)
+            {
+                return 0;
+            }
+
+            if (ParteImaginaria == 0)
+            {
+                if (ParteReal > 0) return 0;
+                else return Math.PI;
+            }
+            if (ParteReal == 0)
+            {
+                if (ParteImaginaria > 0) return Math.PI / 2;
+                else return (3 / 2) * Math.PI;
+            }
+
+
             double argumento = Math.Atan(ParteImaginaria / ParteReal);
             int cuadrante = Cuadrante();
 
