@@ -59,6 +59,14 @@
             this.label16 = new System.Windows.Forms.Label();
             this.buttonCalcular = new System.Windows.Forms.Button();
             this.textBoxTipo3 = new System.Windows.Forms.TextBox();
+            this.textBoxTipoCos = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.textFrecuenciaCos = new System.Windows.Forms.TextBox();
+            this.textFaseCos = new System.Windows.Forms.TextBox();
+            this.textBoxAmplitudCos = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label3
@@ -83,8 +91,8 @@
             this.buttonAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAtras.Font = new System.Drawing.Font("Segoe UI Semibold", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAtras.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonAtras.Location = new System.Drawing.Point(16, 520);
-            this.buttonAtras.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonAtras.Location = new System.Drawing.Point(13, 617);
+            this.buttonAtras.Margin = new System.Windows.Forms.Padding(4);
             this.buttonAtras.Name = "buttonAtras";
             this.buttonAtras.Size = new System.Drawing.Size(124, 40);
             this.buttonAtras.TabIndex = 13;
@@ -123,7 +131,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(321, 140);
+            this.label4.Location = new System.Drawing.Point(337, 140);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(108, 28);
@@ -136,7 +144,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(631, 140);
+            this.label5.Location = new System.Drawing.Point(648, 140);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(108, 28);
@@ -147,7 +155,7 @@
             // textBoxAmplitud1
             // 
             this.textBoxAmplitud1.Location = new System.Drawing.Point(161, 144);
-            this.textBoxAmplitud1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxAmplitud1.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxAmplitud1.Name = "textBoxAmplitud1";
             this.textBoxAmplitud1.Size = new System.Drawing.Size(132, 22);
             this.textBoxAmplitud1.TabIndex = 0;
@@ -155,7 +163,7 @@
             // textBoxFase1
             // 
             this.textBoxFase1.Location = new System.Drawing.Point(772, 144);
-            this.textBoxFase1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxFase1.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxFase1.Name = "textBoxFase1";
             this.textBoxFase1.Size = new System.Drawing.Size(132, 22);
             this.textBoxFase1.TabIndex = 2;
@@ -163,7 +171,7 @@
             // textBoxFrecuencia1
             // 
             this.textBoxFrecuencia1.Location = new System.Drawing.Point(453, 144);
-            this.textBoxFrecuencia1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxFrecuencia1.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxFrecuencia1.Name = "textBoxFrecuencia1";
             this.textBoxFrecuencia1.Size = new System.Drawing.Size(132, 22);
             this.textBoxFrecuencia1.TabIndex = 1;
@@ -173,7 +181,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(951, 140);
+            this.label6.Location = new System.Drawing.Point(968, 140);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(132, 28);
@@ -183,24 +191,28 @@
             // 
             // comboBoxTipo1
             // 
+            this.comboBoxTipo1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBoxTipo1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBoxTipo1.FormattingEnabled = true;
             this.comboBoxTipo1.Items.AddRange(new object[] {
             "Seno",
             "Coseno"});
             this.comboBoxTipo1.Location = new System.Drawing.Point(1108, 144);
-            this.comboBoxTipo1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBoxTipo1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxTipo1.Name = "comboBoxTipo1";
             this.comboBoxTipo1.Size = new System.Drawing.Size(160, 24);
             this.comboBoxTipo1.TabIndex = 3;
             // 
             // comboBoxTipo2
             // 
+            this.comboBoxTipo2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBoxTipo2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBoxTipo2.FormattingEnabled = true;
             this.comboBoxTipo2.Items.AddRange(new object[] {
             "Seno",
             "Coseno"});
             this.comboBoxTipo2.Location = new System.Drawing.Point(1108, 272);
-            this.comboBoxTipo2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBoxTipo2.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxTipo2.Name = "comboBoxTipo2";
             this.comboBoxTipo2.Size = new System.Drawing.Size(160, 24);
             this.comboBoxTipo2.TabIndex = 7;
@@ -210,7 +222,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(951, 268);
+            this.label7.Location = new System.Drawing.Point(968, 268);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(132, 28);
@@ -221,7 +233,7 @@
             // textBoxFrecuencia2
             // 
             this.textBoxFrecuencia2.Location = new System.Drawing.Point(453, 272);
-            this.textBoxFrecuencia2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxFrecuencia2.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxFrecuencia2.Name = "textBoxFrecuencia2";
             this.textBoxFrecuencia2.Size = new System.Drawing.Size(132, 22);
             this.textBoxFrecuencia2.TabIndex = 5;
@@ -229,7 +241,7 @@
             // textBoxFase2
             // 
             this.textBoxFase2.Location = new System.Drawing.Point(772, 272);
-            this.textBoxFase2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxFase2.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxFase2.Name = "textBoxFase2";
             this.textBoxFase2.Size = new System.Drawing.Size(132, 22);
             this.textBoxFase2.TabIndex = 6;
@@ -237,7 +249,7 @@
             // textBoxAmplitud2
             // 
             this.textBoxAmplitud2.Location = new System.Drawing.Point(161, 272);
-            this.textBoxAmplitud2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxAmplitud2.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxAmplitud2.Name = "textBoxAmplitud2";
             this.textBoxAmplitud2.Size = new System.Drawing.Size(132, 22);
             this.textBoxAmplitud2.TabIndex = 4;
@@ -247,7 +259,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(631, 268);
+            this.label8.Location = new System.Drawing.Point(648, 268);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(108, 28);
@@ -260,7 +272,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(321, 268);
+            this.label9.Location = new System.Drawing.Point(337, 268);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(108, 28);
@@ -299,7 +311,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(951, 462);
+            this.label12.Location = new System.Drawing.Point(968, 462);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(132, 28);
@@ -310,24 +322,27 @@
             // textBoxFrecuencia3
             // 
             this.textBoxFrecuencia3.Location = new System.Drawing.Point(453, 465);
-            this.textBoxFrecuencia3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxFrecuencia3.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxFrecuencia3.Name = "textBoxFrecuencia3";
+            this.textBoxFrecuencia3.ReadOnly = true;
             this.textBoxFrecuencia3.Size = new System.Drawing.Size(132, 22);
             this.textBoxFrecuencia3.TabIndex = 10;
             // 
             // textBoxFase3
             // 
             this.textBoxFase3.Location = new System.Drawing.Point(772, 465);
-            this.textBoxFase3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxFase3.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxFase3.Name = "textBoxFase3";
+            this.textBoxFase3.ReadOnly = true;
             this.textBoxFase3.Size = new System.Drawing.Size(132, 22);
             this.textBoxFase3.TabIndex = 11;
             // 
             // textBoxAmplitud3
             // 
             this.textBoxAmplitud3.Location = new System.Drawing.Point(161, 465);
-            this.textBoxAmplitud3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxAmplitud3.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxAmplitud3.Name = "textBoxAmplitud3";
+            this.textBoxAmplitud3.ReadOnly = true;
             this.textBoxAmplitud3.Size = new System.Drawing.Size(132, 22);
             this.textBoxAmplitud3.TabIndex = 9;
             // 
@@ -336,7 +351,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(631, 462);
+            this.label13.Location = new System.Drawing.Point(648, 462);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(108, 28);
@@ -349,7 +364,7 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(321, 462);
+            this.label14.Location = new System.Drawing.Point(337, 462);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(108, 28);
@@ -375,12 +390,12 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(16, 404);
+            this.label16.Location = new System.Drawing.Point(584, 415);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(124, 35);
+            this.label16.Size = new System.Drawing.Size(135, 35);
             this.label16.TabIndex = 29;
-            this.label16.Text = "Resultado";
+            this.label16.Text = "Resultados";
             this.label16.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // buttonCalcular
@@ -395,7 +410,7 @@
             this.buttonCalcular.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCalcular.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonCalcular.Location = new System.Drawing.Point(541, 334);
-            this.buttonCalcular.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonCalcular.Margin = new System.Windows.Forms.Padding(4);
             this.buttonCalcular.Name = "buttonCalcular";
             this.buttonCalcular.Size = new System.Drawing.Size(215, 53);
             this.buttonCalcular.TabIndex = 8;
@@ -406,17 +421,114 @@
             // textBoxTipo3
             // 
             this.textBoxTipo3.Location = new System.Drawing.Point(1108, 465);
-            this.textBoxTipo3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxTipo3.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTipo3.Name = "textBoxTipo3";
+            this.textBoxTipo3.ReadOnly = true;
             this.textBoxTipo3.Size = new System.Drawing.Size(160, 22);
             this.textBoxTipo3.TabIndex = 12;
+            // 
+            // textBoxTipoCos
+            // 
+            this.textBoxTipoCos.Location = new System.Drawing.Point(1108, 543);
+            this.textBoxTipoCos.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxTipoCos.Name = "textBoxTipoCos";
+            this.textBoxTipoCos.ReadOnly = true;
+            this.textBoxTipoCos.Size = new System.Drawing.Size(160, 22);
+            this.textBoxTipoCos.TabIndex = 40;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.White;
+            this.label17.Location = new System.Drawing.Point(968, 540);
+            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(132, 28);
+            this.label17.TabIndex = 44;
+            this.label17.Text = "Tipo de onda:";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // textFrecuenciaCos
+            // 
+            this.textFrecuenciaCos.Location = new System.Drawing.Point(453, 543);
+            this.textFrecuenciaCos.Margin = new System.Windows.Forms.Padding(4);
+            this.textFrecuenciaCos.Name = "textFrecuenciaCos";
+            this.textFrecuenciaCos.ReadOnly = true;
+            this.textFrecuenciaCos.Size = new System.Drawing.Size(132, 22);
+            this.textFrecuenciaCos.TabIndex = 38;
+            // 
+            // textFaseCos
+            // 
+            this.textFaseCos.Location = new System.Drawing.Point(772, 543);
+            this.textFaseCos.Margin = new System.Windows.Forms.Padding(4);
+            this.textFaseCos.Name = "textFaseCos";
+            this.textFaseCos.ReadOnly = true;
+            this.textFaseCos.Size = new System.Drawing.Size(132, 22);
+            this.textFaseCos.TabIndex = 39;
+            // 
+            // textBoxAmplitudCos
+            // 
+            this.textBoxAmplitudCos.Location = new System.Drawing.Point(161, 543);
+            this.textBoxAmplitudCos.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxAmplitudCos.Name = "textBoxAmplitudCos";
+            this.textBoxAmplitudCos.ReadOnly = true;
+            this.textBoxAmplitudCos.Size = new System.Drawing.Size(132, 22);
+            this.textBoxAmplitudCos.TabIndex = 37;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.White;
+            this.label18.Location = new System.Drawing.Point(648, 540);
+            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(108, 28);
+            this.label18.TabIndex = 43;
+            this.label18.Text = "Fase inicial:";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.White;
+            this.label19.Location = new System.Drawing.Point(337, 540);
+            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(108, 28);
+            this.label19.TabIndex = 42;
+            this.label19.Text = "Frecuencia:";
+            this.label19.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.White;
+            this.label20.Location = new System.Drawing.Point(55, 540);
+            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(98, 28);
+            this.label20.TabIndex = 41;
+            this.label20.Text = "Amplitud:";
+            this.label20.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // SumaFasores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.ClientSize = new System.Drawing.Size(1285, 578);
+            this.ClientSize = new System.Drawing.Size(1285, 681);
+            this.Controls.Add(this.textBoxTipoCos);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.textFrecuenciaCos);
+            this.Controls.Add(this.textFaseCos);
+            this.Controls.Add(this.textBoxAmplitudCos);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.label20);
             this.Controls.Add(this.textBoxTipo3);
             this.Controls.Add(this.buttonCalcular);
             this.Controls.Add(this.label12);
@@ -447,7 +559,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonAtras);
             this.Controls.Add(this.label3);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "SumaFasores";
             this.Text = "Suma de fasores";
             this.Load += new System.EventHandler(this.SumaFasores_Load);
@@ -488,5 +600,13 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button buttonCalcular;
         private System.Windows.Forms.TextBox textBoxTipo3;
+        private System.Windows.Forms.TextBox textBoxTipoCos;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox textFrecuenciaCos;
+        private System.Windows.Forms.TextBox textFaseCos;
+        private System.Windows.Forms.TextBox textBoxAmplitudCos;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
     }
 }

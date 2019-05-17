@@ -55,10 +55,37 @@ namespace NCOM.Suma_de_fasores
                 SumaDeFasores suma = new SumaDeFasores(onda1, onda2);
                 Onda ondaResultado = suma.SumarOndas();
 
-                textBoxAmplitud3.Text = Convert.ToString(ondaResultado.Amplitud);
-                textBoxFrecuencia3.Text = Convert.ToString(ondaResultado.Frecuencia);
-                textBoxFase3.Text = Convert.ToString(ondaResultado.FaseInicial);
-                textBoxTipo3.Text = Convert.ToString(ondaResultado.Tipo);
+                string tipoResultado = Convert.ToString(ondaResultado.Tipo);
+
+                if (tipoResultado == "SENO")
+                {
+                    //Llena los campos de arriva con SENO
+                    textBoxAmplitud3.Text = Convert.ToString(ondaResultado.Amplitud);
+                    textBoxFrecuencia3.Text = Convert.ToString(ondaResultado.Frecuencia);
+                    textBoxFase3.Text = Convert.ToString(ondaResultado.FaseInicial);
+                    textBoxTipo3.Text = "Seno";
+
+                    //Llena los campos de abajo con COSENO
+                    textBoxAmplitudCos.Text = Convert.ToString(ondaResultado.Amplitud);
+                    textFrecuenciaCos.Text = Convert.ToString(ondaResultado.Frecuencia);
+                    textFaseCos.Text = Convert.ToString(ondaResultado.FaseInicial + Math.PI / 2); //cos(x) = sen(wx + pi/2)
+                    textBoxTipoCos.Text = "Coseno";
+
+                }
+                else
+                {
+                    //Llena los campos de arriva con SENO
+                    textBoxAmplitud3.Text = Convert.ToString(ondaResultado.Amplitud);
+                    textBoxFrecuencia3.Text = Convert.ToString(ondaResultado.Frecuencia);
+                    textBoxFase3.Text = Convert.ToString(ondaResultado.FaseInicial - Math.PI / 2); //sen(x) = cos(wx - pi/2)
+                    textBoxTipo3.Text = "Seno";
+
+                    //Llena los campos de abajo con COSENO
+                    textBoxAmplitudCos.Text = Convert.ToString(ondaResultado.Amplitud);
+                    textFrecuenciaCos.Text = Convert.ToString(ondaResultado.Frecuencia);
+                    textFaseCos.Text = Convert.ToString(ondaResultado.FaseInicial);
+                    textBoxTipoCos.Text = "Coseno";
+                }
             }
             catch
             {

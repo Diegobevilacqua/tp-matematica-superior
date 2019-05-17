@@ -56,6 +56,8 @@
             // 
             // comboBoxOperacion
             // 
+            this.comboBoxOperacion.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBoxOperacion.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBoxOperacion.DisplayMember = "0";
             this.comboBoxOperacion.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxOperacion.FormattingEnabled = true;
@@ -64,8 +66,8 @@
             "Resta",
             "Multiplicación",
             "División"});
-            this.comboBoxOperacion.Location = new System.Drawing.Point(276, 274);
-            this.comboBoxOperacion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBoxOperacion.Location = new System.Drawing.Point(272, 272);
+            this.comboBoxOperacion.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxOperacion.Name = "comboBoxOperacion";
             this.comboBoxOperacion.Size = new System.Drawing.Size(173, 33);
             this.comboBoxOperacion.TabIndex = 1;
@@ -100,7 +102,7 @@
             // 
             this.pictureContinuar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureContinuar.Image = ((System.Drawing.Image)(resources.GetObject("pictureContinuar.Image")));
-            this.pictureContinuar.Location = new System.Drawing.Point(277, 337);
+            this.pictureContinuar.Location = new System.Drawing.Point(272, 336);
             this.pictureContinuar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureContinuar.Name = "pictureContinuar";
             this.pictureContinuar.Size = new System.Drawing.Size(173, 55);
@@ -241,7 +243,7 @@
             this.labelContinuar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelContinuar.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelContinuar.ForeColor = System.Drawing.Color.White;
-            this.labelContinuar.Location = new System.Drawing.Point(311, 350);
+            this.labelContinuar.Location = new System.Drawing.Point(306, 349);
             this.labelContinuar.Name = "labelContinuar";
             this.labelContinuar.Size = new System.Drawing.Size(102, 32);
             this.labelContinuar.TabIndex = 3;
@@ -268,6 +270,7 @@
             this.textResultadoBin.Location = new System.Drawing.Point(197, 514);
             this.textResultadoBin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textResultadoBin.Name = "textResultadoBin";
+            this.textResultadoBin.ReadOnly = true;
             this.textResultadoBin.Size = new System.Drawing.Size(168, 34);
             this.textResultadoBin.TabIndex = 4;
             this.textResultadoBin.Visible = false;
@@ -278,6 +281,7 @@
             this.textResultadoPol.Location = new System.Drawing.Point(515, 514);
             this.textResultadoPol.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textResultadoPol.Name = "textResultadoPol";
+            this.textResultadoPol.ReadOnly = true;
             this.textResultadoPol.Size = new System.Drawing.Size(173, 34);
             this.textResultadoPol.TabIndex = 5;
             this.textResultadoPol.Visible = false;
@@ -353,7 +357,7 @@
             this.Controls.Add(this.pictureAtras);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.comboBoxOperacion);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "OperarComplejos";
             this.Text = "Operaciones básicas";
             this.Load += new System.EventHandler(this.OperarComplejos_Load);

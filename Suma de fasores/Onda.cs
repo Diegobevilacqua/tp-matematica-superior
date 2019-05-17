@@ -17,7 +17,14 @@ namespace NCOM
         {
             Amplitud = amplitud;
             Frecuencia = frecuencia;
+/*
+            while (faseInicial < 0)
+            {
+                faseInicial += 2 * Math.PI;
+            }
+*/
             FaseInicial = faseInicial;
+
             Tipo = tipo;
         }
 

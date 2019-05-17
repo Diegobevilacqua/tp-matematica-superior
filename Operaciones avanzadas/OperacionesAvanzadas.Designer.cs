@@ -64,7 +64,7 @@
             // 
             this.textBoxComplejo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxComplejo.Location = new System.Drawing.Point(624, 198);
-            this.textBoxComplejo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxComplejo.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxComplejo.Name = "textBoxComplejo";
             this.textBoxComplejo.Size = new System.Drawing.Size(263, 30);
             this.textBoxComplejo.TabIndex = 1;
@@ -84,6 +84,8 @@
             // 
             // comboBoxOperacion
             // 
+            this.comboBoxOperacion.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBoxOperacion.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBoxOperacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxOperacion.FormattingEnabled = true;
             this.comboBoxOperacion.Items.AddRange(new object[] {
@@ -91,7 +93,7 @@
             "Radicación",
             "Raíces primitivas"});
             this.comboBoxOperacion.Location = new System.Drawing.Point(624, 137);
-            this.comboBoxOperacion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBoxOperacion.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxOperacion.Name = "comboBoxOperacion";
             this.comboBoxOperacion.Size = new System.Drawing.Size(263, 33);
             this.comboBoxOperacion.TabIndex = 0;
@@ -126,7 +128,7 @@
             // 
             this.textBoxExpOrden.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxExpOrden.Location = new System.Drawing.Point(624, 254);
-            this.textBoxExpOrden.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxExpOrden.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxExpOrden.Name = "textBoxExpOrden";
             this.textBoxExpOrden.Size = new System.Drawing.Size(263, 30);
             this.textBoxExpOrden.TabIndex = 2;
@@ -174,8 +176,9 @@
             // 
             this.textBoxResBin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxResBin.Location = new System.Drawing.Point(199, 526);
-            this.textBoxResBin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxResBin.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxResBin.Name = "textBoxResBin";
+            this.textBoxResBin.ReadOnly = true;
             this.textBoxResBin.Size = new System.Drawing.Size(229, 30);
             this.textBoxResBin.TabIndex = 4;
             this.textBoxResBin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -184,8 +187,9 @@
             // 
             this.textBoxResPol.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxResPol.Location = new System.Drawing.Point(624, 526);
-            this.textBoxResPol.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxResPol.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxResPol.Name = "textBoxResPol";
+            this.textBoxResPol.ReadOnly = true;
             this.textBoxResPol.Size = new System.Drawing.Size(263, 30);
             this.textBoxResPol.TabIndex = 5;
             this.textBoxResPol.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -200,7 +204,7 @@
             this.buttonAtras.Font = new System.Drawing.Font("Segoe UI Semibold", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAtras.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonAtras.Location = new System.Drawing.Point(16, 687);
-            this.buttonAtras.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonAtras.Margin = new System.Windows.Forms.Padding(4);
             this.buttonAtras.Name = "buttonAtras";
             this.buttonAtras.Size = new System.Drawing.Size(138, 39);
             this.buttonAtras.TabIndex = 6;
@@ -219,7 +223,7 @@
             this.buttonCalcular.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCalcular.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonCalcular.Location = new System.Drawing.Point(349, 325);
-            this.buttonCalcular.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonCalcular.Margin = new System.Windows.Forms.Padding(4);
             this.buttonCalcular.Name = "buttonCalcular";
             this.buttonCalcular.Size = new System.Drawing.Size(192, 61);
             this.buttonCalcular.TabIndex = 3;
@@ -237,7 +241,7 @@
             this.buttonAnterior.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
             this.buttonAnterior.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonAnterior.Location = new System.Drawing.Point(199, 608);
-            this.buttonAnterior.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonAnterior.Margin = new System.Windows.Forms.Padding(4);
             this.buttonAnterior.Name = "buttonAnterior";
             this.buttonAnterior.Size = new System.Drawing.Size(202, 41);
             this.buttonAnterior.TabIndex = 43;
@@ -256,7 +260,7 @@
             this.buttonSiguiente.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
             this.buttonSiguiente.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonSiguiente.Location = new System.Drawing.Point(514, 608);
-            this.buttonSiguiente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonSiguiente.Margin = new System.Windows.Forms.Padding(4);
             this.buttonSiguiente.Name = "buttonSiguiente";
             this.buttonSiguiente.Size = new System.Drawing.Size(204, 41);
             this.buttonSiguiente.TabIndex = 44;
@@ -287,7 +291,7 @@
             this.Controls.Add(this.labelComplejo);
             this.Controls.Add(this.textBoxComplejo);
             this.Controls.Add(this.label3);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "OperacionesAvanzadas";
             this.Text = "Operaciones avanzadas";
             this.Load += new System.EventHandler(this.OperacionesAvanzadas_Load);
