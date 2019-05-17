@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Operaciones avanzadas\FormatoComplejoInvalidoException.cs" />
     <Compile Include="Suma de fasores\Onda.cs" />
     <Compile Include="ComplejoPolar.cs" />
     <Compile Include="Inicio.cs">

@@ -38,61 +38,80 @@ namespace NCOM.Operaciones_avanzadas
         {
             ComplejoBinomica complejoBinomica;
             ComplejoPolar complejoPolar = null;
-
-            if (comboBoxOperacion.Text == "Raíces primitivas")
+            try
             {
-                complejoBinomica = Parser.Parsear(textBoxComplejo.Text);
+                if (Parser.EstaEnBinomica(textBoxComplejo.Text) || Parser.EstaEnPolar(textBoxComplejo.Text) || textBoxComplejo.Text == "")
+                {
+                    complejoBinomica = Parser.Parsear(textBoxComplejo.Text);
+                    if (complejoBinomica != null)
+                        complejoPolar = complejoBinomica.PasarAPolar();
+                }
+                else
+                {
+                    throw new FormatoComplejoInvalidoException();
+                }
 
-                if (complejoBinomica != null)
-                    complejoPolar = complejoBinomica.PasarAPolar();
-            }
+                if (comboBoxOperacion.Text == "Raíces primitivas")
+                {
+                    complejoBinomica = Parser.Parsear(textBoxComplejo.Text);
 
-            if (Parser.EstaEnBinomica(textBoxComplejo.Text) || Parser.EstaEnPolar(textBoxComplejo.Text) || textBoxComplejo.Text == "")
-            {
-                complejoBinomica = Parser.Parsear(textBoxComplejo.Text);
-                if (complejoBinomica != null)
-                    complejoPolar = complejoBinomica.PasarAPolar();
-            }
-            else
-            {
-                throw new Exception("El formato del texto ingresado no es válido.");
-            }
+                    if (complejoBinomica != null)
+                        complejoPolar = complejoBinomica.PasarAPolar();
 
-            if (comboBoxOperacion.Text == "Potenciación")
-            {
-                ComplejoPolar resultado = Potenciacion.Calcular(complejoPolar, Convert.ToDouble(textBoxExpOrden.Text));
-                labelResultado.Visible = true;
-                textBoxResBin.Text = Parser.BinAStringBin(resultado.PasarABinomica());
-                textBoxResPol.Text = Parser.BinAStringPol(resultado.PasarABinomica());
-                return;
-            }
+                }
+                if (comboBoxOperacion.Text == "Potenciación")
+                {
+                    ComplejoPolar resultado = Potenciacion.Calcular(complejoPolar, Convert.ToDouble(textBoxExpOrden.Text));
+                    labelResultado.Visible = true;
+                    textBoxResBin.Text = Parser.BinAStringBin(resultado.PasarABinomica());
+                    textBoxResPol.Text = Parser.BinAStringPol(resultado.PasarABinomica());
+                    return;
+                }
 
-            if (comboBoxOperacion.Text == "Radicación")
-            {
-                resultado = 0;
-                resultados = Radicacion.Calcular(complejoPolar, Convert.ToDouble(textBoxExpOrden.Text));
-                labelResultado.Visible = true;
-                buttonAnterior.Visible = true;
-                buttonSiguiente.Visible = true;
-                textBoxResBin.Text = Parser.BinAStringBin(resultados[resultado].PasarABinomica());
-                textBoxResPol.Text = Parser.BinAStringPol(resultados[resultado].PasarABinomica());
-                return;
-            }
-            
-            if (comboBoxOperacion.Text == "Raíces primitivas")
-            {
-                resultado = 0;
-                labelExpOrden.Text = "Introduzca el orden de las raíces primitivas";
-                resultados = RaicesPrimitivas.Calcular(Convert.ToInt32(textBoxExpOrden.Text));
-                labelResultado.Visible = true;
-                buttonAnterior.Visible = true;
-                buttonSiguiente.Visible = true;
-                textBoxResBin.Text = Parser.BinAStringBin(resultados[resultado].PasarABinomica());
-                textBoxResPol.Text = Parser.BinAStringPol(resultados[resultado].PasarABinomica());
-                return;
-            }
+                if (comboBoxOperacion.Text == "Radicación")
+                {
+                    resultado = 0;
+                    resultados = Radicacion.Calcular(complejoPolar, Convert.ToDouble(textBoxExpOrden.Text));
+                    labelResultado.Visible = true;
+                    buttonAnterior.Visible = true;
+                    buttonSiguiente.Visible = true;
+                    textBoxResBin.Text = Parser.BinAStringBin(resultados[resultado].PasarABinomica());
+                    textBoxResPol.Text = Parser.BinAStringPol(resultados[resultado].PasarABinomica());
+                    return;
+                }
 
-            // Lanzar excepciones si faltan campos por llenar 
+                if (comboBoxOperacion.Text == "Raíces primitivas")
+                {
+                    resultado = 0;
+                    labelExpOrden.Text = "Introduzca el orden de las raíces primitivas";
+                    resultados = RaicesPrimitivas.Calcular(Convert.ToInt32(textBoxExpOrden.Text));
+                    labelResultado.Visible = true;
+                    buttonAnterior.Visible = true;
+                    buttonSiguiente.Visible = true;
+                    textBoxResBin.Text = Parser.BinAStringBin(resultados[resultado].PasarABinomica());
+                    textBoxResPol.Text = Parser.BinAStringPol(resultados[resultado].PasarABinomica());
+                    return;
+                }
+
+            }
+            catch (FormatoComplejoInvalidoException)
+            {
+                MessageBox.Show("Introduzca los números complejos con el siguiente formato: \n" +
+                    "En forma binómica: (a,b) - 'a' parte Real, 'b' parte imaginaria \n" +
+                    "En forma polar: [a;b] - 'a' módulo, 'b' argumento",
+                    "Formato inválido", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("El formato del valor introducido en el campo de 'exponente o raíz' no es válido. " +
+                    "Debe ser un número natural.",
+    "Formato inválido", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (OverflowException)
+            {
+                MessageBox.Show("El valor introducido en el campo de 'exponente o raíz' debe ser un número positivo.",
+    "Valor fuera del dominio", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void ButtonAnterior_Click(object sender, EventArgs e)
