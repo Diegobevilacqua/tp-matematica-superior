@@ -59,7 +59,7 @@ namespace NCOM.Suma_de_fasores
 
                 if (tipoResultado == "SENO")
                 {
-                    //Llena los campos de arriva con SENO
+                    //Llena los campos de arriba con SENO
                     textBoxAmplitud3.Text = Convert.ToString(ondaResultado.Amplitud);
                     textBoxFrecuencia3.Text = Convert.ToString(ondaResultado.Frecuencia);
                     textBoxFase3.Text = Convert.ToString(ondaResultado.FaseInicial);
@@ -74,7 +74,7 @@ namespace NCOM.Suma_de_fasores
                 }
                 else
                 {
-                    //Llena los campos de arriva con SENO
+                    //Llena los campos de arriba con SENO
                     textBoxAmplitud3.Text = Convert.ToString(ondaResultado.Amplitud);
                     textBoxFrecuencia3.Text = Convert.ToString(ondaResultado.Frecuencia);
                     textBoxFase3.Text = Convert.ToString(ondaResultado.FaseInicial - Math.PI / 2); //sen(x) = cos(wx - pi/2)
