@@ -42,6 +42,18 @@ namespace NCOM.Suma_de_fasores
                 tipo1 = (comboBoxTipo1.Text == "Seno") ? TipoDeOnda.SENO : TipoDeOnda.COSENO;
                 tipo2 = (comboBoxTipo2.Text == "Seno") ? TipoDeOnda.SENO : TipoDeOnda.COSENO;
 
+                List<string> textos = new List<string> {
+                    textBoxAmplitud1.Text,
+                    textBoxFrecuencia1.Text,
+                    textBoxFase1.Text,
+                    textBoxAmplitud2.Text,
+                    textBoxFrecuencia2.Text,
+                    textBoxFase2.Text};
+
+                if(textos.Any(texto => texto.Contains(".")))
+                {
+                    throw new InvalidOperationException();
+                }
                 Onda onda1 = new Onda(Convert.ToDouble(textBoxAmplitud1.Text),
                                       Convert.ToDouble(textBoxFrecuencia1.Text),
                                       Convert.ToDouble(textBoxFase1.Text),
@@ -86,6 +98,10 @@ namespace NCOM.Suma_de_fasores
                     textFaseCos.Text = Convert.ToString(ondaResultado.FaseInicial);
                     textBoxTipoCos.Text = "Coseno";
                 }
+            }
+            catch (InvalidOperationException)
+            {
+                MessageBox.Show("El caracter que indica los decimales es ','\nPor favor no usar '.'", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch
             {
